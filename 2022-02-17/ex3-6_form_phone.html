@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>폼 - 전화번호 입력</title>
+  </head>
+
+  <body>
+    <h3>전화번호 입력</h3>
+    <!-- 전화번호 폼에는 action=insert.php를 만들어야 한다. -->
+    <form action="insert.php">
+      이름 : <input type="text" /><br />
+      전화번호 : <input type="text" /><br /><br />
+      <input type="submit" value="저장하기"/>
+      <!--제출 버튼 만들기. value값에 버튼 안에 들어갈 내용(기본값)을 입력하면 된다.-->
+      <input type="button" value="중복확인">
+      <input type="reset" value="다시쓰기">
+      <!-- 입력 값 초기화 -->
+    </form>
+  </body>
+</html>

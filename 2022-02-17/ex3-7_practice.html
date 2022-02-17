@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>폼 - 연습</title>
+  </head>
+
+  <body>
+    <h3>&#60;input&#62; 태그의 속성</h3>
+    <form>
+      <!--<form action="insert.php">-->
+      이름 : <input type="text" value="홍길동" /><br />
+      ?? : <input type="number" autofocus /><br />
+      <!-- 페이지 로딩 때 저절로 해당 박스로 focus되게 함-->
+      <!-- 인풋 타입이 넘버? 숫자만 선택이 가능해짐. .
+      모바일에서 숫자키판이 나타남-->
+      아이디 : <input type="text" value="hong" readonly /><br />
+      <!-- readonly는 복사는 되지만 입력은 안되게 만드는 것 -->
+      전화번호 : <input type="tel" /><br />
+      <!-- tel 쓰면 스마트폰에서는 전화번호 키패드가 나타남-->
+      회원레벨 : <input type="text" value="9" disabled /><br />
+      <!-- disabled는 쓸 수 없는 상태로 만드는 것 -->
+      전화번호 : <input type="text" placeholder="010-123-1234" /><br />
+      <!-- placeholder는 예시를 보여줄 때 쓰는 것. 사용자가 값을 입력할 경우 지워진다. -->
+    </form>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>폼 - 라디오 버튼</title>
+    <style>
+      p {
+        font-size: 12px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>라디오 버튼</h2>
+    <form>
+      1. 이메일 수신 : <input type="radio" name="email">예 
+      <input type="radio" name="email">아니오
+      <!-- 라디오 버튼을 만들기 위해서는, 네임값을 통일시켜야 한다.
+      name을 통일시켜야 하나의 세트가 된다. -->
+    </form>
+    <p>1번은 기본입니다.</p> <br>
+
+    <form>
+      2. 이메일 수신 : <input type="radio" name="email">예 
+      <input type="radio" name="email2">아니오
+    </form>
+    <p>2번의 라디오 버튼을 모두 눌러보세요. 이렇게 name을 다르게 하면, 라디오 버튼이 동시에 눌려진답니다. 신기하죠?</p>
+    <p>라디오 버튼은 하나만 선택되어야 합니다..^^;; 그렇게 해야 사용할 수 있어요.</p> <br>
+      <!-- 라디오 버튼을 만들기 위해서는, 네임값을 통일시켜야 한다.
+      name을 통일시켜야 하나의 세트가 된다. -->
+
+      <form>
+        3. 이메일 수신 : <input type="radio" name="email" checked>예 
+        <input type="radio" name="emailgmae">아니오
+      </form>
+
+        <p>3번 예시는 checked를 보여준 겁니다. 체크 기본값을 설정할 수 있어요.</p> <br>
+        4. 이메일 수신 : <input id="hy" type="radio" name="email" checked><label for="hy">예</label> 
+        <input id="hy2" type="radio" name="email" checked><label for="hy2">아니오</label> 
+        <p>label값을 붙여놓으면, 라디오 버튼 뿐만 아니라 label이 적용된 텍스트를 눌러도 체크박스가 표시됩니다!</p>
+        <p>4번의 예시를 사용하기 위해서는 id값을 필수로 붙여줘야 합니다.</p>
+        <p>텍스트에 버튼으로서의 역할을 넣을 수 있음.</p>
+      </form>
+
+
+
+  </body>
+</html>
