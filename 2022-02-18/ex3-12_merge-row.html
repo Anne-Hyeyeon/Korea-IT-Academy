@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>열 병합</title>
+    <style>
+      table {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>오늘의 날씨</h3>
+    <table border="1">
+      <tr>
+        <th>도</th>
+        <th>시</th>
+        <th colspan="2">최고/최저기온</th>
+      </tr>
+      <tr>
+        <td rowspan="2">경상북도</td>
+        <!-- rowspan 열 병합, ""안에 합칠 셀 숫자. -->
+        <td>구미시</td>
+        <td>30</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>김천시</td>
+        <td>30</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td rowspan="2">경상남도</td>
+        <td>진주시</td>
+        <td>25</td>
+        <td>35</td>
+      </tr>
+      <tr>
+        <td>남해군</td>
+        <td>27</td>
+        <td>31</td>
+      </tr>
+      <tr>
+        <td rowspan="2">전라남도</td>
+        <td>나주시</td>
+        <td>20</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>남원시</td>
+        <td>20</td>
+        <td>30</td>
+      </tr>
+    </table>
+  </body>
+</html>

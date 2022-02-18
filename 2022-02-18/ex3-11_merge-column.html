@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>행 병합</title>
+    <style>
+      table {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>오늘의 날씨</h3>
+    <table border="1">
+      <tr>
+        <th>지역</th>
+        <th colspan="2">최저/최고기온</th>
+        <!-- colspan 붙인 후 병합하고자 하는 셀 갯수 입력 -->
+        <th>위치</th>
+      </tr>
+      <tr>
+        <td colspan="2">서울</td>
+        <td>20</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>대구</td>
+        <td>25</td>
+        <td colspan="2">35</td>
+      </tr>
+      <tr>
+        <td colspan="2">부산</td>
+        <td>27</td>
+        <td>31</td>
+      </tr>
+      <tr>
+        <td>광주</td>
+        <td colspan="2"td>15</td>
+        <td colspan="2">20</td>
+      </tr>
+      <!-- 맨날 헷갈리는거 : 세로가 열, 가로가 행 -->
+    </table>
+  </body>
+</html>
