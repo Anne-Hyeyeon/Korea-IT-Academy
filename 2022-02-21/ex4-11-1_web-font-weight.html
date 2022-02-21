@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>웹폰트-weight 연습</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Nanum Gothic', sans-serif;
+            font-size: 16px;
+        }
+
+        /* 브라우저의 기본 폰트 사이즈는 16px이다. */
+        .font400 {
+            font-weight: 400;
+        }
+
+        .font700 {
+            font-weight: 700;
+        }
+
+        .font800 {
+            font-weight: 800;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p style="font-family: 'Nanum Gothic', sans-serif; font-weight:400;">나눔고딕 400입니다.</p>
+    <p style="font-family: 'Nanum Gothic', sans-serif; font-weight:700;">나눔고딕 700입니다.</p>
+    <p style="font-family: 'Nanum Gothic', sans-serif; font-weight:800;">나눔고딕 800입니다.</p>
+
+    <p class="font400">이런 방법도 됩니다.</p>
+    <p class="font700">이게 된다구요? 클래스를 이용했어요.</p>
+    <p class="font800">클래스를 이용해서도 이런 디자인이 가능하답니다~</p>
+
+    <p style="font-size: 1.5em;">폰트크기 1.5em</p>
+
+    <!-- em은 부모의 크기를 따른다..(상위 요소를 따른다.) body 의 기본 폰트가 16px로 되어있기 때문에, 24px로 출력될 것이다. -->
+    <p style="font-size: 1.5rem;">폰트크기 1.5rem</p>
+    <!-- rem은 최상위 요소(body) 따른다...body 의 기본 폰트가 16px로 되어있기 때문에, 24px로 출력될 것이다. -->
+    <p style="font-size: 36px;">36px 폰트입니다
+        <br><span style="font-size: 2.0rem;">span에 2.0rem을 적용한 모습입니다. 이것은 누구를 따라갈까요? body의 폰트 크기가 16px이므로 이 폰트의 크기는
+            32입니다. 36px 폰트의 크기를 따라가지 않았죠!</span></p>
+    <p style="font-size: 24px;">24px 폰트입니다
+        <br><span style="font-size: 2.0em;">p 밑의 span에 2.0em을 적용한 모습입니다. 이것은 누구를 따라갈까요? p의 폰트 크기가 24px이므로 이 폰트의 크기는
+            48입니다. rem이랑 다르죠? 부모를 따르는 의리가 있네요.</span></p>
+    </p>
+
+</body>
+
+</html>
