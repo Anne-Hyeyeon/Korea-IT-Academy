@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS의 링크 글자</title>
+    <style>
+        a:link {
+            color: grey;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: grey;
+            text-decoration: none;
+        }
+
+        /* 방문한 사이트일 때 */
+        a:hover {
+            color: orange;
+            text-decoration: underline;
+        }
+
+        /* 마우스 오버 되었을 때 */
+        a:active {
+            color: red;
+            text-decoration: underline;
+        }
+
+        /* 클릭해서 활성화 됐을 때 */
+    </style>
+</head>
+
+<body>
+    <h1>혜연이의 하루</h1>
+    <ul>
+        <li><a href="#">밥먹기</a></li>
+        <li><a href="#">일하기</a></li>
+        <li><a href="#">콤퓨타 학원 가기</a></li>
+    </ul>
+</body>
+
+</html>
