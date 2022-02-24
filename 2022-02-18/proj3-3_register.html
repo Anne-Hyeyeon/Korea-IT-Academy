@@ -5,7 +5,6 @@
     <title>폼 - 연습</title>
   </head>
 
-
   <body>
     <h3>회원 가입</h3>
     <table>
@@ -13,55 +12,67 @@
       <!--table을 쓰면 반응형 불가능. div로 작성하는 경우가 많음. -->
       <tr>
         <td>아이디</td>
-        <td><input type="text" autofocus><br /></td>
+        <td><input type="text" autofocus /><br /></td>
       </tr>
       <tr>
         <td>이름</td>
-        <td><input type="text"><br /></td>
+        <td><input type="text" /><br /></td>
       </tr>
       <tr>
         <td>비밀번호</td>
-        <td><input type="password"><br /></td>
+        <td><input type="password" /><br /></td>
       </tr>
       <tr>
         <td>비밀번호 확인</td>
-        <td><input type="password"><br /></td>
+        <td><input type="password" /><br /></td>
       </tr>
       <tr>
         <td>전화번호</td>
-        <td><input type="tel" placeholder="010-123-4567"/><br /></td>
+        <td><input type="tel" placeholder="010-123-4567" /><br /></td>
       </tr>
       <tr>
         <td>이메일</td>
-        <td><input type="text">@
+        <td>
+          <input type="text" />@
           <select>
             <option>직접 입력</option>
             <option value="1">naver.com</option>
             <option value="2">hanmail.net</option>
             <option value="3">gmail.com</option>
             <option value="4">nate.com</option>
-          </select> </td>
+          </select>
+        </td>
       </tr>
       <tr>
         <td>문자수신 여부</td>
-        <td><input type="radio" name="email" checked>예 
-          <input type="radio" name="emailgmae">아니오
+        <td>
+          <input type="radio" name="email" checked />예
+          <input type="radio" name="emailgmae" />아니오
         </td>
       </tr>
       <tr>
-        <td>가입 경로 
+        <td>가입 경로</td>
+        <td>
+          <form>
+            <input id="hy1" type="checkbox" name="item1" /><label for="hy1">
+              친구 소개
+            </label>
+            <input id="hy2" type="checkbox" name="item2" /><label for="hy2">
+              인터넷 검색
+            </label>
+            <input id="hy3" type="checkbox" name="item3" /><label for="hy3">
+              블로그
+            </label>
+            <input id="hy4" type="checkbox" name="item4" /><label for="hy4">
+              기타
+            </label>
+          </form>
         </td>
-        <td>      <form>
-          <input id="hy1" type="checkbox" name="item1"><label for="hy1"> 친구 소개 </label>
-          <input id="hy2" type="checkbox" name="item2"><label for="hy2"> 인터넷 검색 </label>
-          <input id="hy3" type="checkbox" name="item3"><label for="hy3"> 블로그 </label>
-          <input id="hy4" type="checkbox" name="item4"><label for="hy4"> 기타 </label>
-        </form></td>
       </tr>
       <tr>
         <td></td>
         <td></td>
       </tr>
-      </table>  
+    </table>
   </body>
 </html>

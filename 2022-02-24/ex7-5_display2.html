@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>display 속성2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      span {
+        border: 1px solid black;
+        background-color: yellow;
+      }
+      #a {
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+      }
+      #b {
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+      }
+      #c {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>인라인과 블록</h3>
+    <p>
+      글자1 <span id="a">요소 A</span>
+      <!-- span은 inline 요소이다. 가로와 세로 크기를 정해도 변함이 없다. 위 아래 마진을 줘도 변화 없고, 좌우 마진만 먹는다. -->
+      글자2 <span id="b">요소 B</span>
+      <!-- block일때 한 줄을 다 차지하면서 크기, 마진설정이 먹혔다. -->
+      글자3 <span id="c">요소 C</span> 글자 4
+      <!-- inline-blcok일때 글자와 나란히 배치되면서 크기, 마진설정이 먹혔다. -->
+    </p>
+  </body>
+</html>

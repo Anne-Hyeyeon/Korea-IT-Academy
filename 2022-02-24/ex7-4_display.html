@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>display 속성</title>
+    <style>
+      span {
+        color: red;
+        border: 1px solid red;
+      }
+      div {
+        background-color: #eee;
+      }
+      #text1 {
+        display: inline;
+      }
+      #text2 {
+        display: block;
+      }
+      #text3 {
+        display: inline-block;
+      }
+      #text4 {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>display 속성</h1>
+    <h3>1 display:inline</h3>
+    <div>글자1 <span id="text1">안녕하세요</span> 글자2</div>
+    <h3>2 display:block</h3>
+    <div>글자1 <span id="text2">안녕하세요</span> 글자2</div>
+    <h3>3 display:inline-block</h3>
+    <div>글자1 <span id="text3">안녕하세요</span> 글자2</div>
+    <h3>4 display:none</h3>
+    <div>글자1 <span id="text4">안녕하세요</span> 글자2</div>
+    <h3>5 display: 속성 사용안함</h3>
+    <div>글자1 <span>안녕하세요</span> 글자2</div>
+
+    <!-- inline-block과 inline의 형태는 비슷하다. 
+    inline-block : block 속성이지만, 형태는 inline인 친구
+  
+    -->
+  </body>
+</html>

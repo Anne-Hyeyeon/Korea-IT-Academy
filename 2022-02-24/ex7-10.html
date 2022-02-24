@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>회원가입 폼</title>
+    <style>
+      .main_text {
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 20px;
+      }
+      ul li {
+        list-style: none;
+      }
+      
+      .cols li {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 class="main_text">회원가입 폼</h3>
+    <form>
+      <ul>
+        <li>
+          <ul class="cols">
+            <li class="item1">아이디</li>
+            <li class="item2"><input type="text" /></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="cols">
+            <li class="item1">비밀번호</li>
+            <li class="item2"><input type="password" /></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="cols">
+            <li class="item1">비밀번호 확인</li>
+            <li class="item2"><input type="password" /></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="cols">
+            <li class="item1">이름</li>
+            <li class="item2"><input type="text" /></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="cols">
+            <li class="item1">이메일</li>
+            <li class="item2"><input type="text" placeholder="id">@
+              <select>
+                <option>직접 입력</option>
+                <option value="1">naver.com</option>
+                <option value="2">hanmail.net</option>
+                <option value="3">gmail.com</option>
+                <option value="4">nate.com</option>
+              </select>   </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="cols">
+            <li class="item1">이메일 수신</li>
+            <li class="item2"><input type="radio" name="email" checked>예 
+              <input type="radio" name="emailgmae">아니오</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="cols">
+            <li class="item1">가입 경로</li>
+            <li class="item2"><input id="hy1" type="checkbox" name="item1"><label for="hy1">친구추천</label>
+              <input id="hy2" type="checkbox" name="item2"><label for="hy2">인터넷검색</label>
+              <input id="hy3" type="checkbox" name="item3" checked><label for="hy3">기타</label></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="cols">
+            <li class="item1">인사말</li>
+            <li class="item2"><textarea cols="50" rows="6" placeholder="여기에다가 하고 싶은 말을 남겨보세요."></textarea></li>
+          </ul>
+        </li>
+       
+      </ul>
+    </form>
+  </body>
+</html>

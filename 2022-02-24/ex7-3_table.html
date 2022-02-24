@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>테이블</title>
+    <style>
+        table {
+          border-collapse: collapse;
+          /* border-collapse: collapse는 2중선은 한개의 실선으로 만들어줌. */
+          border-top: 3px solid orange;
+        }
+        table th,td {border: 1px solid #ccc;}
+        th {
+         padding: 10px;
+         background-color: #eee;
+        }
+        td {
+         padding: 10px;
+         text-align: center;
+        }
+        #col1,#col2,#col3 {width: 100px;}
+        #col4 {width: 250px;}
+        .bold {font-weight: bold;}
+    </style>
+  </head>
+
+  <body>
+    <h3>놀이공원 이용권</h3>
+    <table border="1">
+      <tr>
+        <th id="col1">종류</td>
+        <th id="col2">대인</td>
+        <th id="col3">소인</td>
+        <th id="col4">비고</td>
+      </tr>
+      <tr>
+        <td class="bold">주간권</td>
+        <td>20,000원</td>
+        <td>10,000원</td>
+        <td rowspan="3">
+          공원입장 및 놀이시설 이용 <br />(일부 놀이기구 별도요금)
+        </td>
+      </tr>
+      <tr>
+        <td class="bold">야간권</td>
+        <td>15,000원</td>
+        <td>8,000원</td>
+      </tr>
+      <tr>
+        <td class="bold">2일권</td>
+        <td>30,000원</td>
+        <td>15,000원</td>
+      </tr>
+    </table>
+  </body>
+</html>
