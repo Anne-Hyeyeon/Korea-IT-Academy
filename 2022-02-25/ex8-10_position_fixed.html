@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>position:fixed</title>
+    <style>
+      #box {
+        width: 10px;
+        height: 1000px;
+        background-color: green;
+      }
+      #a {
+        position: fixed;
+        /* position fixed를 주면 전체 html요소를 기준으로 한 위치에 꽂혀버림. */
+        /* 막강한 요소다^^;; */
+        /* position fixed상태에서는 float도 먹히지 않는다...! */
+        top: 20px;
+        right: 20px;
+        background-color: red;
+        padding: 10px 20px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>절대위치 지정(position:fixed)</h3>
+    <div id="parent">
+      <div id="box"></div>
+      <div id="a">요소 A</div>
+    </div>
+  </body>
+</html>

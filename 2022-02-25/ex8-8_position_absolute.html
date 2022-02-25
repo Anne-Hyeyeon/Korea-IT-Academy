@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>position:absolute</title>
+    <style>
+      #a,
+      #b,
+      #c {
+        width: 100px;
+        height: 60px;
+        background-color: pink;
+        border: 1px solid salmon;
+      }
+      #b {
+        position: absolute;
+        left: 60px;
+        top: 30px;
+        /* 이 문서에서 position absolute는 시작점이 문서의 맨 상단 (왼쪽 끝)이다.
+        (부모가 body이기 때문) */
+      }
+    </style>
+  </head>
+  <body>
+    <h3>절대위치 지정(position:absolute)</h3>
+    <div id="a">요소 A</div>
+    <div id="b">요소 B</div>
+    <div id="c">요소 C</div>
+  </body>
+</html>

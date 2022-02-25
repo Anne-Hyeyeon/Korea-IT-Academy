@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>박스요소의 중앙배치</title>
+    <style>
+      #box1,
+      #box2,
+      #box3 {
+        width: 400px;
+        border: 1px solid red;
+        /* 상하마진 0, 좌우여백 auto면 항상 가운데에 있다.  */
+        margin: 0 auto;
+        padding: 20px;
+      }
+      #box2 {
+        text-align: right;
+      }
+      #box3 {
+        text-align: center;
+      }
+      /* div 박스 안 요소 text align으로 정렬 가능하다. */
+    </style>
+  </head>
+  <body>
+    <div id="box1">안녕하세요</div>
+    <div id="box2">안녕하세요</div>
+    <div id="box3"><img src="../img/orange.jpg" /></div>
+  </body>
+</html>

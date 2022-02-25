@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>html5의 레이아웃</title>
+    <style>
+      #wrap {
+        width: 600px;
+        margin: 0 auto;
+      }
+      header {
+        height: 60px;
+        background-color: #ddd;
+      }
+
+      aside {
+        float: left;
+        width: 200px;
+        height: 300px;
+      background-color: pink;
+      }
+      /* 퍼센트로도 높이, 길이를 정할 수 있다. */
+      section {
+        float: right;
+        width: 400px;
+        height: 300px;
+        background-color: palevioletred
+      }
+      footer {
+        clear: both;
+        height: 60px;
+        background-color: #ddd;
+      }
+
+      header, aside, section, footer {
+        font: 20px;
+        text-align: center;
+        padding-top: 30px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <h2>div 요소를 이용한 레이아웃</h2>
+      <header>상단헤더</header>
+      <aside>사이드바</aside>
+      <section>메인 섹션</section>
+      <footer>하단 풋터</footer>
+      <!-- html5에는 위 태그들이 다 생겼지롱 -->
+    </div>
+  </body>
+</html>

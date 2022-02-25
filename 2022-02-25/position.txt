@@ -1,0 +1,5 @@
+position  종류
+
+relative : 요소가 원래 있던 자리를 기준으로 상대 위치 지정
+absolute : 부모 요소 기준으로 위치 지정
+fixed : 요소가 해당 위치에 고정됨

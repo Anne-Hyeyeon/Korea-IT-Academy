@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>position:absolute의 부모요소 존재</title>
+    <style>
+      #parent {
+        position: relative;
+        width: 350px;
+        height: 200px;
+        border: 1px solid salmon;
+        padding: 90px 0 0 60px;
+        /* position relative를 주는 것은 점을 하나 찍는 것과 같다. 
+        부모 요소에 점을 찍으면 자식이 부모를 기준으로 움직이겠죵?*/
+      }
+      #a,
+      #b,
+      #c {
+        width: 100px;
+        height: 60px;
+        background-color: pink;
+        border: 1px solid salmon;
+      }
+      #a {
+        position: absolute;
+        left: 30px;
+        top: 50px;
+        z-index: 3;
+      }
+      #b {
+        position: absolute;
+        left: 50px;
+        top: 80px;
+        /* 이 문서에서 position absolute는 시작점이 문서의 맨 상단 (왼쪽 끝)이다.
+        (부모가 body이기 때문) */
+        z-index: 1;
+      }
+      #c {
+        position: absolute;
+        left: 80px;
+        top: 60px;
+        z-index: 2;
+      }
+      /* z-index는 숫자가 낮을수록 밑에 깔린다.
+      부모의 z-index를 따라간다는 특징이 있다 */
+    </style>
+  </head>
+  <body>
+    <h3>절대위치 지정(position:absolute), 부모 요소가 있는 경우</h3>
+    <div id="parent">
+      <div id="a">요소 A</div>
+      <div id="b">요소 B</div>
+      <div id="c">요소 C</div>
+    </div>
+  </body>
+</html>
