@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>회원가입 폼</title>
+    <style>    
+      body {
+        padding: 0px 20px;
+      }
+
+      form > ul {
+        border-top: 2px solid #ccc;
+        border-bottom: 2px solid #ccc;
+        padding: 15px 0px;
+        margin: 0;
+        width: 500px;
+      }
+
+      ul li {
+        list-style: none;
+      }
+
+      .signup_cols {
+        padding: 0px 20px;
+      }
+
+      .signup_cols li {
+        display: inline-block;
+      }
+  
+      .signup_lable {
+        width: 120px;
+        padding: 5px 0px;
+      }
+
+      .signup_input {
+        width: 192px;
+      }
+
+      .signup_btn {
+        margin-top: 10px;
+        margin-left: 320px;
+      }
+
+      textarea {
+        width: 322px; 
+        height: 94px;
+      }
+
+      button {
+        padding: 5px 10px;
+        margin-left: 3px;
+      }
+
+      #input_email_id {
+        width: 72px;
+      }
+
+      #email_address {
+        width: 200px;
+      }
+
+      #signup_lable_greeting {
+        vertical-align: top;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h3>회원가입 폼</h3>
+    <form>
+      <ul>
+        <li>
+          <ul class="signup_cols">
+            <li class="signup_lable">아이디</li>
+            <li class="signup_value"><input class="signup_input" type="text" /></li>
+          </ul>
+        </li>
+        <li>
+        <ul class="signup_cols">
+            <li class="signup_lable">비밀번호</li>
+            <li class="signup_value"><input class="signup_input" type="password" /></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="signup_cols">
+            <li class="signup_lable">비밀번호 확인</li>
+            <li class="signup_value"><input class="signup_input" type="password" /></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="signup_cols">
+            <li class="signup_lable">이름</li>
+            <li class="signup_value"><input class="signup_input" type="text" /></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="signup_cols">
+            <li class="signup_lable">이메일</li>
+            <li class="signup_value"><input id="input_email_id" type="text">@
+              <select id="email_address">
+                <option>직접 입력</option>
+                <option value="1">naver.com</option>
+                <option value="2">hanmail.net</option>
+                <option value="3">gmail.com</option>
+                <option value="4">nate.com</option>
+              </select>   
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="signup_cols">
+            <li class="signup_lable">이메일 수신</li>
+            <li class="signup_value">
+              <input type="radio" name="email" checked>비수신 
+              <input type="radio" name="email">수신
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="signup_cols">
+            <li class="signup_lable">가입 경로</li>
+            <li class="signup_value">
+              <input id="recommendation1" type="checkbox" name="friend"><label for="recommendation1">친구추천</label>
+              <input id="recommendation2" type="checkbox" name="internet"><label for="recommendation2">인터넷검색</label>
+              <input id="recommendation3" type="checkbox" name="etc" checked><label for="recommendation13">기타</label>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="signup_cols">
+            <li class="signup_lable signup_lable_greeting">인사말</li>
+            <li class="signup_value">
+              <textarea></textarea>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </form>
+    <div class="signup_btn">
+      <button>저장하기</button>
+      <button>취소하기</button>
+    </div>
+  </body>
+</html>
