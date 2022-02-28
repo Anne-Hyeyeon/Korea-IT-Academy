@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Layout3</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      .box {
+        width:1000px;
+        margin: 0 auto;
+        border: 1px solid blue;
+      }
+
+
+      header {
+        border: 1px solid red;
+        height: 25px;
+      }
+
+      .logo_menu {
+        border: 1px solid red;
+        height: 70px;
+      }
+
+      header #top_menu {
+      float: right;
+      border: 1px solid red;
+      }
+
+    header #logo {
+      border: 1px solid blue;
+      clear: both;
+      margin-bottom: 50px;
+    }
+
+    section #main_image  {
+      display: inline-block;
+      margin-top: 30px;
+      width: 780px;
+      height: 200px;
+      border: 1px solid red;
+    }
+
+    section aside  {
+      display: inline-block;
+      margin-top: 30px;
+      width: 206px;
+      height: 200px;
+      border: 1px solid red;
+    }
+
+    .item1, .item2 {
+      margin-top: 20px;
+      border: 1px solid red;
+      display: inline-block;
+    }
+
+    .item1 {
+      width: 206px;
+      height: 250px;
+    }
+
+    
+    .item2 {
+      width: 250px;
+      height: 250px;
+    }
+
+    footer {
+      margin-top: 50px;
+      border: 1px solid red;
+      height: 100px;
+    }
+
+    #footer1, #footer2 {
+      border: 1px solid red;
+      display: inline-block;
+    }
+
+    #footer1 {
+      float: left;
+    }
+
+    #footer2 {
+      float: right;
+    }
+
+    .footer_box {
+      border: 1px solid red;
+      height: 80px;
+    }
+
+
+    </style>
+  </head>
+  <body>
+   <header>
+    <div class="box">
+      <nav id="top_menu">상단메뉴</nav>
+    </div>
+  </header>
+
+    <div class="logo_menu">
+    <div class="box">
+      <nav id="logo">로고 & 메인 메뉴 & 검색</nav>
+    </div>
+  </div>
+
+   </nav>
+
+   <section>
+     <div class="box">    
+       <div id="main_image">메인 이미지</div>
+     <aside>
+       사이드바
+     </aside>
+      <div class="item1"></div>
+      <div class="item2"></div>    
+      <div class="item2"></div>    
+      <div class="item2"></div>    
+    </div>
+   </section>
+
+   <footer>
+     <div class="box"></div>
+     <div class="box footer_box">
+      <div id="footer1">
+        푸터1
+      </div>
+      <div id="footer2">
+       푸터2
+     </div>
+   </footer>
+  </body>
+</html>

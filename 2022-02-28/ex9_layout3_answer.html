@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Layout3_answer</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        box-sizing: border-box;
+        /* 패딩, 보더의 사이즈가 요소의 크기를 변경하지 않게끔!
+        가로 크기에 맞춰서  */
+      }
+
+      li {
+        list-style: none;
+      }
+      .box {
+        width:1000px;
+        margin: 0 auto;
+        border: 1px solid blue;
+      }
+
+      .clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .box:after{
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      header {
+        height: 100px;
+        border: 1px solid red;
+      }
+
+      header #top {
+        height: 30px;
+        border: 1px solid red;
+
+      }
+
+      header #top_menu {
+        float: right;
+        border: 1px solid red;
+
+      }
+
+      section #main_image {
+        float: left;
+        width: 750px;
+        height: 200px;
+        margin-top: 50px;
+        border: 1px solid red;
+      }
+      
+      section aside {
+        float: right;
+        width: 230px;
+        height: 200px;
+        border: 1px solid red;
+        margin-top: 50px;
+      }
+
+      #main {
+        clear: both;
+      }
+
+      #main li {
+        display: inline-block;
+        margin-top: 20px;
+        border: 1px solid red;
+      }
+
+      #main .item1 {
+        width: 206px;
+        height: 250px;
+      }
+
+      #main .item2 {
+        width: 250px;
+        height: 250px;
+        margin-left: 8px;
+      }
+
+      footer {
+        height: 100px;
+        margin-top: 50px;
+        border: 1px solid red;
+
+      }
+
+      footer #footer1 {
+        float: left;
+        border: 1px solid red;
+      }
+
+      footer #footer2 {
+        float: right;
+        border: 1px solid red;
+      }
+
+    </style>
+  </head>
+  <body>
+   <header class="clearfix">
+     <nav id="top">
+        <div class="box clearfix">
+           <nav id="top_menu">상단메뉴</nav>
+        </div>
+      </nav>
+    <div class="box clearfix">
+        <nav id="main_menu">로고 & 메인 메뉴 & 검색</nav>
+    </div>
+    </div>
+  </header> 
+   <section>
+     <div class="box">    
+       <div id="main_image">메인 이미지</div>
+     <aside>
+       사이드바
+     </aside>
+     <div id="main">
+       <ul>
+      <li class="item1">항목1</li>
+      <li class="item2">항목2</li>   
+      <li class="item2">항목3</li>    
+      <li class="item2">항목4</li>
+      </ul>    
+    </div>
+   </section>
+   <footer>
+     <div class="box">
+      <div id="footer1">푸터1</div>
+      <div id="footer2">푸터2</div>
+     </div>
+   </footer>
+  </body>
+</html>

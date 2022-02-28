@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>smile face</title>
+    <style>
+      #smile-face {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      margin: 0 auto;
+      }
+
+      .face {
+        position: absolute;
+      }
+
+      .round {
+        background-color: yellow;
+        width: 300px;
+        height: 300px;
+        border-radius: 150px;
+        left: 50%;
+        top: 50%;
+        margin: -150px 0 0 -150px;
+        border: 1px solid black;
+        animation: face 2s infinite alternate;
+      }
+
+      .eyes {
+        background-color: black;
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        top : 200px;
+        animation: eye 2s infinite alternate;
+      }
+
+      .eyes_left {
+        left: 150px;
+        animation-delay: 2s;
+      }
+
+      .eyes_right  {
+        right: 150px;
+      }
+
+      .nose {
+        background-color: black;
+      }
+
+      .nose_vertical {
+        width:10px;
+        height: 50px;
+        left: 240px;
+        top: 230px;
+      }
+
+      .nose_bottom {
+        width: 30px;
+        height: 10px;
+        left: 240px;
+        top: 270px;
+      }
+      /* 선생님이 알려준~ 귀여운 입모양 만드는 법 */
+      .mouth {
+        width: 70px;
+        height: 70px;
+        border: 3px solid black;
+        bottom: 120px;
+        left: 215px;
+        border-radius: 0 0 40px 40px;
+        animation: mouth 1s infinite alternate;
+      }
+      
+      @keyframes face {
+      0% {
+        background-color: pink;
+      }
+
+      50% {
+        background-color: palevioletred;
+      }
+
+      100% {
+        background-color: pink;
+      }
+
+    }
+
+      @keyframes eye {
+        from  {
+          transform: scale(1);
+        }
+        to  {
+          transform: scale(1.2);
+          /* transform scale은 크기를 바꿔주는 애니메이션 */
+        }
+      }
+
+      @keyframes mouth  {
+        from  {
+          height:80px;
+        }
+
+        to {
+          height: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="smile-face">
+      <div class="round face"></div>
+      <div class="eyes eyes_left face"></div>
+      <div class="eyes eyes_right face"></div>
+      <div class="nose nose_vertical face"></div>
+      <div class="nose nose_bottom face"></div>
+      <div class="mouth face"></div>
+    </div>
+  </body>
+</html>
