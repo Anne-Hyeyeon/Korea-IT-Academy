@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    * {  
+      margin: 0;  
+      padding: 0;
+      box-sizing: border-box;
+      }
+      
+      html {
+        min-width: 110px;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      .box {
+        position: relative;
+        width:1100px;
+        margin: 0 auto;      
+      }
+
+
+
+      /* Header */
+      header {
+        height: 166px;
+      }
+
+      #logo {
+        float: left;
+        margin: 80px 0 0 60px;
+      }
+
+      #menu {
+        float: right;
+        text-align: right;
+        margin-right: 20px;
+      }
+
+      #menu li {
+        display: inline-block;
+      }
+
+      #top_menu li {
+        margin: 30px 0 0 10px;
+      }
+
+      #main_menu li {
+        margin: 50px 0 0 80px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+
+
+      /* Main Image */
+      #main_image {
+        height: 312px;
+        background: url("../img/ex9/main_bg.png") no-repeat center;
+        /* 반복 안하고! 센터로 잡아준다! 배경이미지 속성 정할 수 있다! */
+        text-align: center;
+      }
+      /* 신청하기 버튼 위치 잡기 : 박스 넣어보기~? */
+
+      #main_image a {
+        position: absolute;
+        right: 100px;
+        top: 220px;
+      }
+      /* 박스 안에 요소를 감싸서 position (absolute, relative) 이용해서 위치 잡기 */
+
+
+
+      /* Aside */
+      aside {
+          width: 220px;
+          float: left;
+          margin: 70px 0;
+      }
+
+      aside .title1 {
+        padding: 12px;
+        background-color: #0ca9a3;
+        color: white;
+        font-size: 18px;
+      }
+
+      aside .comment {
+        padding: 20px 10px;
+        line-height: 1.5;
+      }
+
+      aside .search input {
+        width: 160px;
+        height: 32px;
+        border: 1px solid black;
+        vertical-align:top;
+      }
+
+      aside .search button {
+        margin-left: 5px;
+        padding: 6px 7px;
+        border: 1px solid black;      
+      }
+
+      aside .title2 {
+        margin-top: 20px;
+        padding: 12px;
+        border-top: 2px solid black;
+        font-size: 18px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      aside .list {
+        margin: 20px 0;
+      }
+
+      aside .list li {
+        margin: 10px 12px;
+      }
+
+      aside .reply {
+        border: 1px solid #0ca9a3;
+        padding-bottom: 10px;
+      }
+
+      aside .reply h2 {
+        font-size: 18px;
+        margin: 20px 10px;
+      }
+
+      aside .reply li {
+        margin: 10px 12px;
+      }
+
+
+      /* Main */
+      #main {
+          float: right;
+          width: 840px;	
+          margin: 70px 0;
+      }
+
+      /* Main-1 */
+      #main1 {
+        float: left;
+        width: 405px;
+      }
+
+      #main1 .title1 {
+        padding-bottom: 8px;
+        border-bottom: 1px solid black;
+      }
+
+      #main1 .latest {
+        margin-top: 30px;
+      }
+
+      #main1 .items {
+        position: relative;
+        height: 34px;
+      }
+
+      #main1 .items .subject {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      #main1 .items .date {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      #main1 .title2 {
+        margin-top: 30px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid black;
+      }
+
+      /* Main-2 */
+      #main2 {
+        float: right;
+        width: 400px;
+      }
+      
+      #main2 .title1 {
+        padding-bottom: 8px;
+        border-bottom: 1px solid black;
+      }
+
+      #main2 .item1 {
+        float: left;
+        width: 189px;
+        margin-top: 30px;
+      }
+
+      #main2 .item2 {
+        float: right;
+        width: 189px;
+        margin-top: 30px;
+      }
+
+      #main2 .subject {
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      #main2 .date {
+        margin-top: 5px;
+      }
+
+
+
+      /* Footer */
+      footer {
+          clear: both;
+          height: 120px;
+          background-color: #05354e;
+          color: white;
+      }
+
+      #bottom_menu ul {
+        padding: 20px 0 0 100px;
+      }
+
+      #bottom_menu li {
+        display: inline-block;
+        margin-right: 30px;
+      }
+
+      footer .itmes{
+        float:left;
+      }
+
+      footer h3 {
+        color: #0ca9a3;
+      }
+  </style>
+</head>
+<body>
+	<header>
+		<div class="box">
+			<div id="logo">
+			<img src="../img/ex9/logo.png">
+			</div>
+			<nav id ="menu">
+			<ul id="top_menu">
+				<li>김지영(jykim)님</li>
+				<li>│</li>
+				<li>로그아웃</li>
+				<li>│</li>
+				<li>정보수정</li>
+			</ul>
+			<ul id="main_menu">
+				<li>Home</li>
+				<li>출석부</li>
+				<li>작품갤러리</li>
+				<li>게시판</li>
+			</ul>
+			</nav>
+		</div>
+		</header>
+   
+<section id="main_image">
+  <div class="box">
+    <a href="#"><img src="../img/ex9/btn_class.png" /></a>
+  </div>
+</section> 
+ 
+<div class="box">
+ 	<aside>
+     <h2 class="title1">The 베이킹</h2>
+     <p class="comment">안녕하세요. 쿠키와 빵 만들기 정보를 공유하고 소통하는 공간입니다.</p>
+     <div class="search">
+       <input type="text" />
+       <button>검색</button>
+      </div>
+      <h2 class="title2">베이킹/요리</h2>
+      <ul class="list">
+        <li>쿠키 만들기</li>
+        <li>빵 만들기</li>
+        <li>마카롱 만들기</li>
+      </ul>
+      <div class="reply">
+        <h2>최근 댓글</h2>
+        <ul>
+          <li>안녕하세요.</li>
+          <li>환영합니다.</li>
+          <li>오랜만에 돌아왔네요.</li>
+        </ul>
+      </div>
+     </div>
+   </aside> 
+	<section id="main">
+    <div id="main1">
+      <h3 class="title1">알림</h3>
+      <ul class="latest">
+        <li class="items">
+          <div class="subject">쿠킹 클래스 연기합니다.</div>
+          <div class="date">09.30</div>
+        </li>
+        <li class="items">
+          <div class="subject">쿠킹 클래스 연기합니다.</div>
+          <div class="date">09.30</div>
+        </li>
+        <li class="items">
+          <div class="subject">쿠킹 클래스 연기합니다.</div>
+          <div class="date">09.30</div>
+        </li>
+        <li class="items">
+          <div class="subject">쿠킹 클래스 연기합니다.</div>
+          <div class="date">09.30</div>
+        </li>
+        <li class="items">
+          <div class="subject">쿠킹 클래스 연기합니다.</div>
+          <div class="date">09.30</div>
+        </li>
+      </ul>
+      <h3 class="title2">게시판</h3>
+      <ul class="latest">
+        <li class="items">
+          <div class="subject">쿠킹 클래스 연기합니다.</div>
+          <div class="date">09.30</div>
+        </li>
+        <li class="items">
+          <div class="subject">쿠킹 클래스 연기합니다.</div>
+          <div class="date">09.30</div>
+        </li>
+        <li class="items">
+          <div class="subject">쿠킹 클래스 연기합니다.</div>
+          <div class="date">09.30</div>
+        </li>
+        <li class="items">
+          <div class="subject">쿠킹 클래스 연기합니다.</div>
+          <div class="date">09.30</div>
+        </li>
+        <li class="items">
+          <div class="subject">쿠킹 클래스 연기합니다.</div>
+          <div class="date">09.30</div>
+        </li>
+      </ul>
+    </div>
+   <div id="main2">
+    <h3 class="title1">제빵 클래스</h3>
+    <ul class="item1">
+      <li><img src="../img/ex9/bread1.png"</li>
+      <li class="subject">도너츠 만들기 [3]</li>
+      <li class="date">03.04</li>
+    </ul>
+    <ul class="item2">
+      <li><img src="../img/ex9/bread2.png"</li>
+      <li class="subject">베이글 만들기 [2]</li>
+      <li class="date">03.04</li>
+    </ul>
+    <ul class="item1">
+      <li><img src="../img/ex9/bread3.png"</li>
+      <li class="subject">샌드위치 만들기 [3]</li>
+      <li class="date">03.04</li>
+    </ul>
+    <ul class="item2">
+      <li><img src="../img/ex9/bread4.png"</li>
+      <li class="subject">머핀 만들기 [1]</li>
+      <li class="date">03.04</li>
+    </ul>
+   </div>
+  </section> 
+  	
+<footer>
+	<div class="box">
+		  <nav id="bottom_menu">
+        <ul>
+          <li>The 베이킹 소개</li>
+          <li>개인정보처리방침</li>
+          <li>저작권 정보</li>
+          <li>이용 안내</li>
+        </ul>
+        <div class="items">
+          <h3>문의전화</h3>
+          <ul>
+            <li class="phone">123-4567</li>
+          </ul>
+        </div>
+      </nav>
+	</div> 
+</footer> 
+</body>
+</html>

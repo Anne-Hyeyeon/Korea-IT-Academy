@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* {  
+	margin: 0;  
+	padding: 0;
+	box-sizing: border-box;
+	text-align: center;
+}
+li { list-style-type: none; }
+.box {  
+	width: 1000px;  
+	margin: 0 auto;  
+	border: solid 1px blue;
+}
+header {
+	height: 100px;
+	border: solid 1px red;	
+}
+header #top {
+	height: 30px;
+	border: solid 1px red;	
+}
+header #top_menu {
+	float: right;
+	border: solid 1px red;	
+}
+section #main_image {
+	width: 750px;
+	height: 200px;
+	float: left;
+	margin-top: 50px;
+	border: solid 1px red;
+}
+section aside {
+	width: 230px;
+	height: 200px;
+	float: right;
+	margin-top: 50px;	
+	border: solid 1px red;
+}
+#main {	 clear: both;  }
+#main li {
+	margin-top: 20px;
+	display: inline-block;
+}
+#main .item1 {
+	width: 206px;
+	height: 250px;
+	border: solid 1px red;	
+}
+#main .item2 {
+	width: 250px;
+	height: 250px;
+	margin-left: 8px;
+	border: solid 1px red;	
+}
+footer {
+	height: 100px;
+	margin-top: 50px;
+	border: solid 1px red;	
+}
+footer #footer1 {
+	float: left;
+	border: solid 1px red;	
+}
+footer #footer2 {
+	float: right;
+	border: solid 1px red;	
+}
+</style>
+</head>
+<body>
+	<header>
+		<nav id="top">
+			<div class="box">
+				<nav id="top_menu" >
+					상단 메뉴
+				</nav>
+			</div> <!-- box -->
+		</nav>
+		<div class="box">
+			<nav id="main_menu" >
+				로고 & 메인 메뉴 & 검색
+			</nav>
+		</div> <!-- box -->
+		</nav>
+	</header>
+	<section>
+		<div class="box">
+			<div id="main_image">
+				메인 이미지
+			</div>
+			<aside>
+				사이드바
+			</aside>
+			<div id="main">
+				<ul>
+					<li class="item1">항목1</li>
+					<li class="item2">항목2</li>
+					<li class="item2">항목3</li>
+					<li class="item2">항목4</li>
+				</ul>
+			</div>
+		</div> <!-- box -->
+	</section>
+	<footer>
+		<div class="box">
+			<div id="footer1">
+				푸터1
+			</div>
+			<div id="footer2">
+				푸터2
+			</div>
+		</div> <!-- box -->
+	</footer>
+</body>
+</html>

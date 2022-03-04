@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Subject 8-2</title>
+    <style>    
+      h2 {
+        width: 200px;
+        margin: 20px auto;
+      }
+
+      #box {
+        position: relative;
+        background-color: green;
+        width: 650px;
+        height: 520px;
+        margin: 0 auto;
+      }
+
+      #box a {
+        position: absolute;
+        background-color: yellow;
+        width: 100px;
+        height: 70px;
+        padding-top: 20px;
+        box-shadow: 3px 3px 10px white;
+        border-radius: 15px;
+        text-align: center;
+        transition: 1s all;
+        /* 1초동안 모든 속성이 바뀌는 애니메이션을 줄 것 */
+      }
+
+      a:link, a:visited, a:active {
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      #box a:hover {
+        background-color: orange;
+        transform: scale(1.2);
+        font-weight: bold;
+      }
+
+
+      #menu1 {
+        left:280px;
+        top:80px
+      }
+
+      #menu2 {
+        left: 140px;
+        top: 140px;
+      }
+
+      #menu3 {
+        left: 420px;
+        top: 140px;
+      }
+
+      #menu4 {
+        left: 140px;
+        top: 280px;
+      }
+
+      #menu5 {
+        left: 420px;
+        top: 280px;
+      }
+
+      #menu6 {
+        left: 280px;
+        top: 350px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2><a href="#">프로그래밍 강좌</a></h2>
+    <!-- <div id="box">
+      <div id="menu1"><a href="#">HTML<br>강좌</a></div>
+      <div id="menu2"><a href="#">CSS<br>강좌</a></div>
+      <div id="menu3"><a href="#">파이썬<br>강좌</a></div>
+      <div id="menu4"><a href="#">C#<br>강좌</a></div>
+      <div id="menu5"><a href="#">자바<br>강좌</a></div>
+      <div id="menu6"><a href="#">PHP<br>강좌</a></div>
+    </div> 
+    div안에 링크를 넣은 경우-->
+
+    <div id="box">
+      <a id="menu1" href="#"="menu1">HTML<br>강좌</a>
+      <a id="menu2" href="#"="menu2">CSS<br>강좌</a>
+      <a id="menu3" href="#"="menu3">파이썬<br>강좌</a>
+      <a id="menu4" href="#"="menu4">C#<br>강좌</a>
+      <a id="menu5" href="#"="menu5">자바<br>강좌</a>
+      <a id="menu6" href="#"="menu6">PHP<br>강좌</a>
+    </div6
+    <!--6불필요한 코딩 x a다가 바로 효과 적용 -->
+  </body6
+</html6
