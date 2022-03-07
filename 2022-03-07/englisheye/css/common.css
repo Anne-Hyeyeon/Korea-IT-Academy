@@ -1,0 +1,15 @@
+/* global */
+
+.none {
+  display: none;
+}
+
+.wrap_page {
+  width: 1280px;
+  height: 752px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1190px;
+}

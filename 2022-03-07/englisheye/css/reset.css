@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/* Reset */
+html,body{width:1280px;height:752px;cursor:auto;overflow:hidden;-webkit-touch-callout:none;-webkit-user-select:none;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
+textarea{resize:none; text-align:left; -webkit-border-radius:0px;}
+body,h1,h2,h3,h4,input,button{font-family:Helvetica,Arial,"돋움",Dotum,sans-serif; font-size:12px;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,fieldset,p,button,input{margin:0;padding:0;}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,p{word-break:break-all;word-wrap:break-word;}
+img,fieldset,iframe{border:0 none}
+li{list-style:none}
+input,select,button{vertical-align:middle;outline:none;}
+img{vertical-align:top; border:none; -webkit-user-select: none;}
+em,address{font-style:normal}
+label,button{cursor:pointer}
+button{margin:0;padding:0}
+a{color:#595a5f; text-decoration:none;outline:none;}
+a:hover{color:#595a5f; text-decoration:none}
+button *{position:relative}
+option{padding-right:6px}
+hr{display:none}
+legend{*width:0; display:none;}
+video{resize:both;}
