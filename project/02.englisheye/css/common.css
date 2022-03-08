@@ -1,0 +1,44 @@
+@import url('reset.css');
+@import url('font.css');
+
+/* 본고딕, 나눔체 : 자주 쓰는 폰트이므로 웹폰트를 항상 사용할 수 있도록 샘플을 만들어 놓자. */
+/* global */
+
+.none {
+  display: none;
+}
+
+.wrap_page {
+  width: 1280px;
+  height: 752px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1190px;
+}
+
+/* main page */
+.main_wrap {
+  width: 1190px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.topArea {
+  position: relative;
+}
+
+.topArea .main_logo {
+  display: block;
+  width: 122px;
+  height: 95px;
+  background: url(../englisheye_student_main/images/gate_login_logo_englisheye.png) no-repeat;
+  background-size: contain;
+}
+
+.topArea .control {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

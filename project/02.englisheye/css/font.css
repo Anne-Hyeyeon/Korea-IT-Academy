@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+/* HelveticaNeue 45 Light*/
+@font-face{font-family:hvLight;src:local(※),url('font/HelveticaNeue-Light.woff') format('woff')}
+/* HelveticaNeue 55 Roman*/
+@font-face{font-family:hvRoman;src:local(※),url('font/HelveticaNeue-Roman.woff') format('woff')}
+/* HelveticaNeue 65 Medium*/
+@font-face{font-family:hvMedium;src:local(※),url('font/HelveticaNeue-Medium.woff') format('woff')}
+/* HelveticaNeue 65 Heavy*/
+@font-face{font-family:hvHeavy;src:local(※),url('font/HelveticaNeue-Heavy.woff') format('woff')}
+/* HelveticaNeue 95 Black*/
+@font-face{font-family:hvBlack;src:local(※),url('font/HelveticaNeue-Black.woff') format('woff')}
