@@ -18,27 +18,8 @@
   width: 1190px;
 }
 
-/* main page */
-.main_wrap {
-  width: 1190px;
-  margin: 0 auto;
-  border: 1px solid red;
-}
 
-.topArea {
-  position: relative;
-}
-
-.topArea .main_logo {
-  display: block;
-  width: 122px;
-  height: 95px;
-  background: url(../englisheye_student_main/images/gate_login_logo_englisheye.png) no-repeat;
-  background-size: contain;
-}
-
-.topArea .control {
-  position: absolute;
-  top: 0;
-  right: 0;
+/* color */
+.clr_tp01 {
+  color: #e7c83c;
 }

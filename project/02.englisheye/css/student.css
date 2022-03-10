@@ -1,0 +1,213 @@
+
+/* main page */
+.main_wrap {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.topArea {
+  position: relative;
+  height: 110px;
+}
+
+.topArea .main_logo {
+  display: block;
+  width: 122px;
+  height: 95px;
+  background: url(../englisheye_student_main/images/gate_login_logo_englisheye.png) no-repeat;
+  background-size: contain;
+  margin-top: 18px;
+  margin-left: 12px;
+  /* 배경 사진 크기 박스에 맞추기 */
+}
+
+.topArea .control {
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+
+.topArea .control li {
+  float: left;
+  margin-left: 7px;
+  position: relative;
+}
+
+.topArea .control li .updateNum {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #f15b2f;
+  color: white;
+  text-align: center;
+  line-height: 24px;
+  /* 원래 이렇게 하면 별로 좋은 게 아님. 간단한 것만 라인하이트! */
+  border-radius: 12px;
+  position: absolute;
+  right: -4px;
+  top: -5px;
+  /* 만약 세 자리 수가 넘어가서 1,000 이상이 될 경우, 99+ 로 표현할 수 있다. 단, 확인이 필요하다.  */
+}
+
+.unit {
+  font-family: 'hvLight';
+  float: left;
+  width: 750px; 
+}
+
+.unit_info {
+  background-color: #113155;
+  color: #fff;
+  font-size: 24px;
+  height: 50px;
+  line-height: 0.9;
+  padding: 0 20px;
+  /* 패딩을 이용해서 정렬하기 */
+}
+
+.unit_info_title {
+  float: left;
+  padding-top: 15px;
+}
+
+.unit_info_date {
+  float: right;
+  font-size: 18px;
+  padding-top: 18px;
+}
+
+.unit_class {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  position: relative;
+  width: 250px;
+  height: 265px;
+  float: left;
+  box-sizing: border-box;
+  /* 보더 사이즈 무시하고 정확하게 박스 넣기 */
+  padding: 30px 0 0 30px;
+}
+
+.unit_class_title {
+  font-family: 'hvMedium';
+  font-size: 24px;
+  position: absolute;
+  top: 30px;
+}
+
+.unit_class_title p {
+  font-family: 'hvMedium';
+  font-size: 16px;
+}
+
+.unit_class_detail {
+  /* font-family: 'hvRoman'; */
+  font-size: 16px;
+  position: absolute;
+  bottom: 30px;
+}
+
+.unit_class.type01 {
+  background-color: #48bbee;
+  color: #fff;
+}
+
+.unit_class.image {
+  padding: 0;
+}
+
+.unit_class.type02 {
+  background-color:#a4b3bc;
+  color: #677177;
+}
+
+.unit_class.type03 {
+  background-color:#6ebfd0;
+  color: #fff;
+}
+
+.unit_class.type04 {
+  background-color:#98aab5;
+  color: #677177;
+}
+
+.unit_class_icon {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+.my {
+  float: right;
+  width: 425px;
+  border: 1px solid red;
+}
+
+.my_left {
+  float: left;
+}
+
+.my_left_blog {
+  width: 250px;
+  height: 220px;
+  background-color: #eb7d4a;
+  color: white;
+  font-size: 22px;
+  padding: 30px 0 0 30px;
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+.my_left_blog p {
+  margin-top: 7px;
+  font-size: 14px;
+}
+
+.my_left_bottom_icon {
+  position: absolute;
+  top: 120px;
+  right: 30px;
+}
+
+.my_left_activity {
+  width: 250px;
+  height: 220px;
+  background-color: #f3d338;
+  color: white;
+  font-size: 16px;
+  position: relative;
+}
+
+.my_left_activity_btn {
+  float: left;
+  width: 125px;
+  height: 110px;
+}
+
+.my_left_activity_btn_image {
+  width: 75px;
+  height: 75px;
+}
+
+
+
+.my_right {
+  background-color: #8dd75e;
+  padding: 16px 0 0 16px;
+  float: right;
+  width: 160px;
+  height: 456px;
+  font-size: 16px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.my_right_info_intro {
+  margin-bottom: 50px;
+}
+
+.my_right_info_intro p {
+  font-size: 12px;
+}
