@@ -1,0 +1,89 @@
+.gate_activitymap_subject {
+  font-family: "hvLight";
+  height: 145px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.gate_activitymap_subject_name {
+  font-size: 50px;
+  margin-left: 13px;
+}
+
+.gate_activitymap_btn {
+  width: 1210px;
+  padding: 0px 45px 0;
+}
+
+.gate_activitymap_btn_top,
+.gate_activitymap_btn_bottom {
+  padding: 20px 20px 0 20px;
+  margin-bottom: 30px;
+}
+
+.gate_activitymap_btn_contents {
+  background-image: url(../images/gate_acty_incBox_normal.png);
+  background-size: 265px 160px;
+  width: 265px;
+  height: 160px;
+  display: inline-block;
+  margin-right: 30px;
+  position: relative;
+}
+
+.gate_activitymap_btn_top a:last-child,
+.gate_activitymap_btn_bottom a:last-child {
+  margin: 0;
+}
+
+.gate_activitymap_btn_number {
+  width: 52px;
+  height: 52px;
+  background-color: #9bb4c1;
+  border-radius: 52px;
+  box-shadow: 1px 1px 1px grey;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-family: "hvHeavy";
+  position: absolute;
+  top: -18px;
+  right: -18px;
+}
+
+.gate_activitymap_btn_contents_name {
+  color: #444444;
+  font-size: 24px;
+  font-family: "hvLight";
+  font-weight: bold;
+  padding: 35px 35px 0;
+  letter-spacing: 1px;
+}
+
+.gate_activitymap_btn_contents_start-button {
+  width: 195px;
+  height: 35px;
+  margin-top: 10px;
+  margin-left: 40px;
+  background-color: transparent;
+  color: transparent;
+  font-size: 20px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gate_activitymap_btn a:hover {
+  background: url(../images/gate_acty_incBox_selected.png);
+  background-size: 265px 160px;
+}
+
+.gate_activitymap_btn a:hover .gate_activitymap_btn_contents_start-button {
+  background-color: #eccc39;
+  color: white;
+}

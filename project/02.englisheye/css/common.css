@@ -1,5 +1,5 @@
-@import url('reset.css');
-@import url('font.css');
+@import url("reset.css");
+@import url("font.css");
 
 /* 본고딕, 나눔체 : 자주 쓰는 폰트이므로 웹폰트를 항상 사용할 수 있도록 샘플을 만들어 놓자. */
 /* global */
@@ -18,8 +18,40 @@
   width: 1190px;
 }
 
-
 /* color */
 .clr_tp01 {
   color: #e7c83c;
+}
+
+.bgc_main {
+  background-color: #f1f7f6;
+}
+
+/* activity */
+
+.bgc_activity {
+  background-color: #49bbee;
+}
+
+.gate_activitymap_top {
+  height: 105px;
+  display: flex;
+  padding: 0 30px 0 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gate_activitymap_top img {
+  width: 65px;
+  height: 60px;
+}
+
+.gate_activitymap_top_unit-name {
+  font-family: "hvMedium";
+  color: #113255;
+  font-size: 26px;
+}
+
+.gate_activitymap_top_unit-name span:first-child {
+  font-weight: bold;
 }
