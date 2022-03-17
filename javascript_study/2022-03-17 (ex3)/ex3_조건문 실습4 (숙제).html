@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>숙제 - if문 별만들기</title>
+  <script>
+    // 변수선언
+    var kor = Number(prompt("국어 점수를 입력하세요", '점수 입력'));
+    var eng = Number(prompt("영어 점수를 입력하세요", '점수 입력'));
+    var math = Number(prompt("수학 점수를 입력하세요", '점수 입력'));
+    var sum = kor + eng + math
+    var avg = sum / 3;
+    var result;
+    if(avg>=90){
+      result="수";
+    }else if (avg>=80){
+      result="우";
+    }else if (avg>=70){
+      result="미"
+    }else if (avg>=60){
+      result="양"
+    }else {
+      result="가"
+    }
+    // 출력
+    alert('총점 : '+ sum +"\n평균 : "+avg+"\n결과 : "+result)
+
+  </script>
+</head>
+<body>
+</body>
+</html>
