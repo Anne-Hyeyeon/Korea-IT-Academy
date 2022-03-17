@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>if, else</title>
+  <script>
+    // 변수선언
+    var date = new Date();
+    // var date = new Date(); 는 현재 날짜 및 시간을 내호음.
+    var hour = date.getHours();
+    // .getHours(); '시'를 구할 수 있음.
+    // getFullYear, getDate, getDay 등의 종류도 있음.
+    console.log(hour);
+
+
+    // 조건문
+    if (hour < 11){
+      alert('아침 먹을 시간입니다.')
+    } else { 
+      if (hour<15){
+        alert('점심 먹을 시간입니다.')
+      }else{
+        alert('저녁 먹을 시간입니다.')
+      }
+    }
+
+    // 조건을 계속~넣어서 참거짓을 계속 판단할 수 있다.
+  </script>
+</head>
+<body>
+
+</body>
+</html>
