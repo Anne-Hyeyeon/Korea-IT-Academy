@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>switch</title>
+  <script>
+    // 변수선언
+    var input = new Date();
+    // var input = new Date('March 13, 08 11:00');
+    var hour = input.getHours();
+    
+
+    // 조건문
+    switch(true){
+        case hour<11:
+            alert('아침 먹을 시간입니다');
+            break;
+        case hour<15:
+            alert('점심 먹을 시간입니다.');
+            break;
+        default:
+            alert('저녁 먹을 시간입니다.');
+            break;
+    }
+  </script>
+</head>
+<body>
+
+</body>
+</html>

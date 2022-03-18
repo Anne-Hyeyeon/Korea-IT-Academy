@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>반복문 - while : 컴퓨터 성능 측정</title>
+  <script>
+    //변수선언
+    var value = 0;
+    var startTime = new Date().getTime();
+    // Date().getTIme()은 현재 시간을 뜻한다.
+    // 1000ms는 1초이다.
+    // console.log(startTime) 찍으면 ms단위 숫자가 나온다.
+
+    // 반복문
+    while(new Date().getTime() < startTime + 1000 ) {
+      // while문에서 쓰인 getTime은 startTime보다 늦을 것이다.
+      value++;
+    }
+    alert(value);
+  </script>
+</head>
+<body>
+유닉스시간의 개념도 알아두도록 하자!
+</body>
+</html>

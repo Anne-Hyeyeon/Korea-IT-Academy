@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>반복문 - if의 break</title>
+  <script>
+    // 반복문
+    for (var i = 0; true; i++) {
+      alert(i+'번째 반복문입니다.');
+      // 진행여부 판단
+      if (!confirm('계속하시겠습니까?')){
+        break;
+      }
+      // !confirm 하는 이유! 취소버튼 누르면 종료시키기 위해서
+    }
+    alert('프로그램 종료')
+
+  </script>
+</head>
+
+<body>
+</body>
+</html>

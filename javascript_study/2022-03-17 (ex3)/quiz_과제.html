@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 조건문 - if문 별만들기</title>
+</head>
+<body>
+    정사각형 별찍기<br>
+    <script>
+        for(var i = 0; i < 5; i++) {
+            for(var j = 0; j < 5; j++)  {
+                    document.write('*');
+            }
+            document.write('<br>');
+        }
+        document.write('<br>');
+    </script>
+
+    삼각형 별찍기 1<br>
+    <script>
+        for(var k = 0; k < 5; k++)  {
+            for(var t = 0; t < k+1; t++)  {
+                    document.write('*');
+                }
+                document.write('<br>')
+            } 
+        document.write('<br>');
+    </script>
+
+    삼각형 별찍기 2<br>
+    <script>
+        for(var m = 0; m < 5; m++)  {
+            for (var h = 0; h < 5-m; h++) {
+                    document.write('&nbsp;')
+                }
+                for(var n = 0; n < m+1; n++)  {
+                        document.write('*');
+                    }
+            document.write('<br>')
+            }                   
+        document.write('<br>');
+    </script>
+    
+    
+    삼각형 거꾸로 별찍기 1<br>
+    <script>
+        for(var a = 0; a < 5; a++)  {
+            for (var b = 0; b < 5-a; b++) {
+                document.write('*');
+                    }
+            document.write('<br>')
+            }                   
+        document.write('<br>');
+    </script>
+
+        
+    삼각형 거꾸로 별찍기 2<br>
+    <script>
+        for(var d = 0; d < 5; d++)  {
+            for (var e = 0; e < d+1; e++) {
+                    document.write('&nbsp;')
+                }
+                for(var f = 0; f < 5-d; f++)  {
+                        document.write('*');
+                    }
+            document.write('<br>')
+            }                   
+        document.write('<br>');
+    </script>
+
+    정삼각형 별찍기<br>
+    <script>
+        for(var x = 0; x < 4; x++)  {
+            for(var y = 0; y < 5-x; y++)  {
+                    document.write('&nbsp;');
+                }
+                for(var z = 0; z < x*2+1; z++)  {
+                    document.write('*');
+                }
+                document.write('<br>')
+            }
+    document.write('<br>');
+    </script>
+</body>
+</html>
+
