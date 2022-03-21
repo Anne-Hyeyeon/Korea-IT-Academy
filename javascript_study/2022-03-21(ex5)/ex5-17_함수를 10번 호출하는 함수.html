@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>함수 - 내부함수</title>
+  <script>
+    //함수를 10번 호출하는 함수
+    function callFunctionTenTimes(otherFunction) {
+      for(var i=0;i<10;i++){
+        otherFunction();
+      }
+    }
+    // callFunctionTenTimes()함수 호출
+    callFunctionTenTimes(function(){
+      alert('Hello World...!');
+    });
+
+    // 마지막 함수 호출때 들어있는 인자가 function이다. 함수 자체를 변수로 받아서 돌린 것이다.
+
+  </script>
+</head>
+
+<body>
+</body>
+</html>

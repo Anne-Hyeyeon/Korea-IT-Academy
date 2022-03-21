@@ -1,0 +1,14 @@
+[자바스크립트 내장 함수]
+내장 함수 : 자바스크립트에서 자체 제공하는 기본 내장 함수
+
+
+-인코딩, 디코딩과 관련된 내장 함수
+인코딩 : 문자를 컴퓨터에 저장하거나 통신에 사용할 목적으로 부호화 (한글 같은 유니코드 문자)
+디코딩 : 부호화된 문자를 원래대로 되돌리는 것
+ex) escape, unescape...
+
+- eval(string) string을 자바스크립트 코드로 실행
+- isFinite(number) number가 무한한 값인지 확인. true or false
+- isNan(number) number가 NaN인지 확인. true of false
+- parseInt(string) string을 정수로 바꿈
+- parseFloat(string) string을 유리수로 바꿈

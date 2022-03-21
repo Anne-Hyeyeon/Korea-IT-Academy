@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>함수 - 내장함수3</title>
+  <script>
+      // 변수선언
+      var value = -10 / 0;
+      // 음수를 0으로 나누면, 마이너스 인피니티가 된다.
+      // 출력
+      alert(isFinite(value));
+      if(value == Infinity){
+        alert('value is Infinity');
+      }else{
+        alert('value is not Infinity');
+      }
+
+      // 여기서 isFinite(value)를 씌우면, false가 나온다. 여기서 마이너스 인피니티는 비교 자체가 불가능한것이라는 걸 알 수 있다.
+  </script>
+</head>
+
+<body>
+</body>
+</html>

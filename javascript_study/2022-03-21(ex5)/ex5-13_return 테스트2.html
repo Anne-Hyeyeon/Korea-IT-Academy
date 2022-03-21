@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>함수 - return</title>
+  <script>
+    // 함수선언
+    function returnTest() {
+    alert('문장 A');
+    return;
+    alert('문장 B');
+  }
+  // 함수호출
+  var value = returnTest();
+  alert(typeof(value) + ' : ' + value);
+  </script>
+  <!-- 함수를 실행하다가 return을 시켜버리면, 그 함수의 값이 출력되는 게 아니다. return의 역할은 말 그대로 값 전달일 뿐이다. -->
+</head>
+
+<body>
+</body>
+</html>

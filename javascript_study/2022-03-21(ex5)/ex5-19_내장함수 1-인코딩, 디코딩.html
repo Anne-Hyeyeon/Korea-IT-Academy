@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>함수 - 내장함수</title>
+  <script>
+      //인코딩할 URL을 만듭니다.
+      var URI = 'http://www.naver.com?test=한글입니다.';
+      // 출력할 문자열 생성
+      var output = '';
+      output += 'escape()\n';
+      output += escape(URI)+ '\n\n';
+      output += 'encodeURI()\n';
+      output += encodeURI(URI) + '\n\n';
+      output += 'encodeURIComponent()\n'
+      output += encodeURIComponent(URI);
+      // 출력
+      alert(output); 
+  </script>
+</head>
+
+<body>
+</body>
+</html>

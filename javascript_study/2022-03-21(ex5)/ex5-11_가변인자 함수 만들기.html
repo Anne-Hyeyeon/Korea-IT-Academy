@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>함수</title>
+  <script>
+      function sumAll(){
+        var willRetrun = 0;
+        // for...in문은 상속된 열거 가능한 속성들을 포함하여 객체에서 문자열로 키가 지정된 모든 열거 가능한 속성에 대해 반복합니다. (Symbol로 키가 지정된 속성은 무시합니다.)
+        for(var i in arguments){
+          willRetrun += arguments[i];
+        }
+        return willRetrun;
+      }
+      // for in : 배열에 있는 것들을 순서대로 출력시켜 줄 수 있음.
+      // 함수 호출
+      alert(sumAll(1,2,3,4,5,6,7,8,9));
+
+      // arguments는 자바스크립트에서 원래 제공하는 객체.
+  </script>
+</head>
+
+<body>
+</body>
+</html>
