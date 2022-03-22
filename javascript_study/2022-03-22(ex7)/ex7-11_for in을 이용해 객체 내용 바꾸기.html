@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM - Document Object Model</title>
+  <script>
+      window.onload = function(){
+        // 문서 객체 가져오기
+          var headers = document.getElementsByTagName('h1');
+          // 출력
+          var output = '';
+          for (var i in headers){
+            output += i + '\n';
+            headers[i].innerHTML = 'with getEmentbyID()';
+          }
+          alert(output);
+        }
+      // 순서를 변수명 뒤 []로 설정. 0이 첫번째다.
+  </script>
+</head>
+<body>
+    <h1 id="header_1">Header1</h1>
+    <h1 id="header_2">Header2</h1>
+</body>
+</html>

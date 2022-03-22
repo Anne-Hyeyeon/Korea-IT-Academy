@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BOM - Browser Object Model</title>
+  <script>
+      // 윈도우가 로드될 때
+      // 여기서 window.onload란 ? 윈도우가 실행될 때마다.
+      window.onload = function(){};
+      // 1초마다 함수를 실행
+      var interalID = setInterval(function(){
+        document.body.innerHTML += '<p>' + new Date() + '</p>';
+      }, 1000);
+    
+      setTimeout(function(){
+        clearInterval(interalID)
+      }, 5000);
+    
+  </script>
+</head>
+
+<body>
+</body>
+</html>

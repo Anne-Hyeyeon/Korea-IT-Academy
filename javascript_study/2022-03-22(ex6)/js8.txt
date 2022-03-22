@@ -1,0 +1,32 @@
+[브라우저 객체 모델]
+BOM, Browser Object Model
+웹 브라우저와 관련된 객체의 집합
+window, location, navigator, history, screen, document 등
+
+
+[객체의 타이머 메서드]
+setTimeout() 메서드 : 특정한 시간 후 한 번 함수 실행
+setInterval() 메서드 : 특정한 시간마다 함수 실행 (메모리 차지)
+setTimeout(function, milisecond) 일정 시간 후 함수 한번 더 실행
+setInterval(function, milisecond) 일정 시간마다 반복해서 실행.
+clearTimeout(id) 일정 시간동안 함수를 한번 실행하는 것을 중지
+clearInterval(id) 일정시간마다 함수 반복하는 걸 중단.
+
+참고로 setTimeout은 많이 쓰이는 친구.
+
+[ㅇㅇBy()형태의 매서드]
+현재 윈도우를 기준으로 상대적으로 속성 변화
+
+[ㅇㅇTo()형태의 메서드]
+절대적인 기준으로 속성 변화
+
+moveBy(x,y) 윈도우의 위치를 상대적으로 이동
+moveTo(x,y) 윈도우의 위치를 절대적으로 이동
+resizeBy(x,y) 윈도우 크기를 상대적으로 지정
+이외에도 scroll, focus, blur, close 등이 있다.
+
+
+[window 객체의 onload 속성]
+이벤트 속성 : 문서 객체의 속성 중 on으로 시작하는 속성
+함수를 할당
+실행시키면 객체 로드 완료 후 자동으로 할당한 함수가 실행됨.

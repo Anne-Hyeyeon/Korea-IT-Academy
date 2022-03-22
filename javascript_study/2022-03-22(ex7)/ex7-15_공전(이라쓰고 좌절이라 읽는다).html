@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM - Document Object Model</title>
+  <script>
+      window.onload = function(){
+        // 변수선언
+        var sun = document.getElementById('sun')
+        var earth = document.getElementById('earth')
+        var moon = document.getElementById('moon')
+      
+        sun.style.position='absolute';
+        earth.style.position='absolute';
+        moon.style.position='absolute';
+
+        sun.style.left = 250 + 'px';
+        sun.style.top = 200 + 'px';
+
+        // 변수선언
+        var earthAngle = 0;
+        var moonAngle = 0;
+
+        // 애니메이션 시작
+        setInterval(function(){
+          // 각도를 사용해 지구와 달의 좌표를 구함.
+          var earthLeft = 250 + 150 * Math.cos(earthAngle); 
+          var earthTop = 200 + 150 * Math.sin(earthAngle);
+          var moonLeft = earthLeft + 50 * Math.cos(moonAngle);
+          var moonTop = earthTop + 50 * Math.sin(moonAngle);
+
+          // 위치를 이동
+          earth.style.left = earthLeft + 'px';
+          earth.style.top = earthTop + 'px';
+          moon.style.left = moonLeft + 'px';
+          moon.style.top = moonTop + 'px';
+
+          // 각도를 변경
+          earthAngle += 0.1;
+          moonAngle += 0.3;
+        },1000/20);
+        
+        // 1000/30 : 1초를 30번으로 나눈다. 1초에 30번 깜빡인다는 뜻. 프레임이 30개로 나눠진다는 뜻. 영상처럼 부드럽게 움직인다는 뜻? 한ㅁ다ㅣ로..프레임 조절...
+      }
+  </script>
+</head>
+<body>
+    <h1 id="sun">@</h1>
+    <h1 id="earth">O</h1>
+    <h1 id="moon">*</h1>
+</body>
+</html>

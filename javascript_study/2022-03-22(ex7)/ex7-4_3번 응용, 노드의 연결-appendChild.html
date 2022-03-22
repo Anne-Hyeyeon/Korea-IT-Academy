@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM - Document Object Model</title>
+  <script>
+      window.onload = function(){
+        // 변수 선언
+        var header = document.createElement('h1');
+        var textNode = document.createTextNode('Hello DOM');
+        // createElement : 요소 노드 만들기, createTextNode : 텍스트 노드 만들기
+        // 노드의 연결
+        document.body.appendChild(header);
+        header.appendChild(textNode);
+      }
+      // 글자 한 줄 넣는데 코드 5줄...? 제이쿼리의 탄생 배경을 이해하게 된다...
+  </script>
+</head>
+<body>
+
+</body>
+</html>

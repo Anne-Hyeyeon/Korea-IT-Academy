@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM - Document Object Model</title>
+  <script>
+      window.onload = function(){
+        // 변수 선언
+        var img = document.createElement('img');
+        img.setAttribute('src','cat.jpg')
+        img.setAttribute('width','500')
+        img.setAttribute('height','300')
+        img.setAttribute('data-property','350')
+        // attribute 예시 : img 안에 있는 src, width, height
+        // 중간 쉼표는 = html 역할을 해주나봄.
+        // date-property는 attr 값은 없지만, 지정해서 넣을 수 있다.
+        document.body.appendChild(img);
+      }
+
+      // 이처럼 setAttribute는, 태그를 만든 후 attribute를 추가할 수 있게 한다.
+      // getAttribute는, 태그 안의 attribute값을 가져올 수 있다. 
+  </script>
+</head>
+<body>
+
+</body>
+</html>

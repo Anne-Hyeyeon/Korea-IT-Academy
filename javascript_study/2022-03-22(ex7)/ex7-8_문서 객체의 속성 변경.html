@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM - Document Object Model</title>
+  <script>
+      window.onload = function(){
+        // 문서 객체 가져오기
+          var header1 = document.getElementById('header_1');
+          var header2 = document.getElementById('header_2');
+        // 문서 객체의 속성 변경 (HTML의 내용을 쇽 바꾼다)
+          header1.innerHTML = 'with getElementById';
+          header2.innerHTML = 'with getElementById';
+      }
+  </script>
+</head>
+<body>
+    <h1 id="header_1">Header1</h1>
+    <h1 id="header_2">Header2</h1>
+</body>
+</html>

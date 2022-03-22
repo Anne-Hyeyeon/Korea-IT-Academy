@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BOM - Browser Object Model- window open</title>
+  <script>
+      // 윈도우가 로드될 때 
+      window.onload = function() {
+      alert('3초 후 이 페이지는 종료됩니다.');      
+      window.setTimeout (function() {
+        window.close();
+      }, 3000);
+      }
+  </script>
+</head>
+
+<body>
+</body>
+</html>
