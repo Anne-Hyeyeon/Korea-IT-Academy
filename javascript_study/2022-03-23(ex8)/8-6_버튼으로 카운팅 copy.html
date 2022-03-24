@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event</title>
+  <script>
+      window.onload = function(){
+        // 문서 객체 가져오기
+        var buttonA = document.getElementById('button_a');
+        var buttonB = document.getElementById('button_b');
+        var counterA = document.getElementById('counter_a');
+        var counterB = document.getElementById('counter_b');
+
+        // 이벤트 연결
+        buttonA.onclick = function(){
+            counterA.innerHTML = Number(counterA.innerHTML) +1;
+        }
+
+        buttonB.onclick = function(){
+            counterB.innerHTML = Number(counterB.innerHTML) +1;
+        }
+      
+    };
+  </script>
+</head>
+<body>
+  <button id="button_a">Button A</button>
+  <button id="button_b">Button B</button>
+  <h1>Button A - <span id="counter_a">0</span></h1>
+  <h1>Button B - <span id="counter_b">0</span></h1>
+</body>
+</html>

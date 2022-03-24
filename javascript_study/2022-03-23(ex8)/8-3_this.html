@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event</title>
+  <script>
+      window.onload = function(){
+      // 변수 선언
+      var header = document.getElementById('header').onclick = function(){
+          alert(this);
+          // this는 아이디나 클래스를 가져왔을 때, 본인 자신을 뜻한다.
+      };
+    }
+  </script>
+</head>
+<body>
+  <h1 id="header">HEADER</h1>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event- click 이벤트 연결 예제</title>
+  <script>
+    window.onload = function(){
+        var header = document.getElementById('myHeader');
+        var handler = function(){
+            this.style.color = 'red';
+            this.removeEventListner('click', handler);
+            // removeEventListner는 addEventListner를 막아주는 역할
+        }
+        header.addEventListener('click',handler);
+    };
+  </script>
+   </style>
+</head>
+<body>
+    <h1 id="myHeader">
+        CLICK
+    </h1>
+</body>
+</html>

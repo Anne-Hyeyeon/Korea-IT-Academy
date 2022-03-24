@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            setTimeout(function(){
+                var value = $('select > option:selected').val();
+                alert(value);
+            },5000);
+        });
+    </script>
+</head>
+<body>
+    <select>
+        <option>Apple</option>
+        <option>Bag</option>
+        <option selected>Cat</option>
+        <!-- 여기에 selected나오면 cat이 기본값으로 선택되어 나온다. -->
+        <option>Dog</option>
+        <option>Elephant</option>
+    </select>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            $('li > span*').css('color','red');
+            // CSS에서 쓰이는 선택자가 제이쿼리에서 모두 먹힌다.
+        });
+    </script>
+</head>
+<body>
+    <ul>
+        <li><span>Apple</span></li>
+        <li>Bag</li>
+        <li>Cat</li>
+        <li>Dog</li>
+        <li>Elephant</li>
+    </ul>
+</body>
+</html>

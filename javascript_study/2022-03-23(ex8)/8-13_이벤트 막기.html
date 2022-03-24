@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event</title>
+  <script>
+    window.onload = function(){
+      // 이벤트 연결
+      document.getElementById('header').onclick = function(){
+        alert('header');
+      }
+      document.getElementById('paragragh').onclick = function(e){
+        var event = e || window.event;
+        alert('paragragh');
+        // 이벤트 전달 제거
+        event.cancelBubble = true; //익스플로러
+        if(event.stopPropagation){ //그 외의 부라우저
+          event.stopPropagation();
+        }
+      }
+    }
+  </script>
+    <style>
+      *{
+       border:3px solid black;
+       padding: 20px;
+       margin: 0;
+     }
+   </style>
+</head>
+<body>
+    <h1 id="header">
+        <p id="paragragh">Paragragh</p>
+    </h1>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event</title>
+  <script>
+      function whenSubmit(){
+        // 변수선언
+            var pass = document.getElementById('pass').value;
+            var pass_check= document.getElementById('pass_check').value;
+            if(pass === pass_check){
+              alert('성공');
+            }else{
+              alert('다시 입력해주세요.');
+              return false;
+            }
+        };
+  </script>
+</head>
+<body>
+    <form id="my_form" onsubmit="whenSubmit()">
+      <!-- 요것보시게~ 주목 -->
+        <label for="name">이름</label><br />
+        <input type="text" name="name" id="name" /><br />
+        <label for="pass">비밀번호</label><br />
+        <input type="password" name="pass" id="pass" /><br />
+        <label for="pass_check">비밀번호 확인</label><br />
+        <input type="password" name="pass" id="pass_check" /><br />
+        <input type="submit" value="제출" />
+    </form>
+</body>
+</html>

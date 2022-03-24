@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event</title>
+  <style>
+     *{
+      border:3px solid black;
+      padding: 20px;
+      margin: 0;
+    }
+  </style>
+  <script>
+
+  </script>
+</head>
+<body>
+    <div onclick="alert('outer_div')">
+      <div onclick="alert('inner_div')">
+        <h1 onclick="alert('header')">
+          <p onclick="alert('paragragh')">paragragh</p>
+        </h1>
+      </div>
+    </div>
+</body>
+</html>

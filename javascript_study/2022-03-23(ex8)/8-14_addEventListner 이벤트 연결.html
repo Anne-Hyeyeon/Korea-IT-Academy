@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event- click 이벤트 연결 예제</title>
+  <script>
+    window.onload = function(){
+        var header = document.getElementById('myHeader');
+        // addEventListner : 이벤트를 감지하는 역할
+        header.addEventListener('click',function(){
+            this.innerHTML += "+";
+        })
+    };
+  </script>
+   </style>
+</head>
+<body>
+    <h1 id="myHeader">
+        CLICK
+    </h1>
+</body>
+</html>
