@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <style>
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+          $('h1').removeAttr('data-index');
+          // 이렇게 하면 attr이 지워짐!!!!
+    });
+    </script>
+</head>
+<body>
+  <h1 data-index="0">header-0</h1>
+  <h1 data-index="1">header-1</h1>
+  <h1 data-index="2">header-2</h1>
+</body>
+</html>

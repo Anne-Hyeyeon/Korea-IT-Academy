@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            // 변수선언
+            var array = [
+              // {}와 쉼표로 구분
+              {name:'korea IT', link:'http://www.koreaitacademy.com/'},
+              {name:'Naver', link:'http://www.naver.com/'},
+              {name:'Daum', link:'http://www.daum.net/'},
+              {name:'Google', link:'http://www.google.com/'},
+            ];
+            // $ each()메서드를 사용
+            $.each(array,function(index,item){
+              var output = '';
+              output += '<a href="'+item.link+ '">';
+              output += '<h1>' + item.name + '</h1>';
+              output += '</a>'
+              document.body.innerHTML += output;
+            })
+        });
+    </script>
+</head>
+<body>
+   
+</body>
+</html>

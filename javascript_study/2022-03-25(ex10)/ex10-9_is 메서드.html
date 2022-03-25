@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <style>
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        // is : 무언가가 있는지 없는지 판단해줌.
+        $(function(){
+            $('h1').each(function(){
+                if($(this).is('.select')){
+                    $(this).css('backgroundColor','Orange');
+                }else{
+                    $(this).css('backgroundColor','grey');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1 class="select">header - 0</h1>
+    <h1>header - 1</h1>
+    <h1 class="select">header - 2</h1>
+    <!-- 클래스에 select가 있는 것들만 바꿔보고 싶다? -->
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <style>
+      .high_light_0 {
+        background-color: yellow;
+      }
+      .high_light_1 {
+        background-color: orange;
+      }
+      .high_light_2 {
+        background-color: blue;
+      }
+      .high_light_3 {
+        background-color: green;
+      }
+      .high_light_4 {
+        background-color: red;
+      }
+    </style>
+    <script>
+        $(function(){
+          $('h1').addClass(function(index,item){
+              return 'high_light_'+index;
+              // addClass할 땐 클래스명에 '.'안 붙여도 된다.
+          })
+        });
+    </script>
+</head>
+<body>
+   <h1>item - 0</h1>
+   <h1>item - 1</h1>
+   <h1>item - 2</h1>
+   <h1>item - 3</h1>
+   <h1>item - 4</h1>
+</body>
+</html>

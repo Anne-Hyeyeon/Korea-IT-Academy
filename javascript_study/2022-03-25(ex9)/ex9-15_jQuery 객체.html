@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+        // 변수선언 후 각각의 항목을 넣어준다.
+          var object = {}; //빈 객체
+          object.name = 'Hyeyeon Kim';
+          object.gender = 'Female';
+          object.part = 'Drum';
+        // 출력
+        var output = '';
+        $.each(object,function(key,item){
+          output += key + ': ' +item + '\n';
+        })
+        alert(output);
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>

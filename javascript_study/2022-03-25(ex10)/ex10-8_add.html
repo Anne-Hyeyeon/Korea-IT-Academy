@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            $('h1').css('background','gray').add('h2').css('float','left')
+            // h1을 선택한 후 h2를 선택해서 효과 먹이고 싶을 때. 이때 h1에만 먹인 효과는 h2에 먹지 않는다.
+        });
+    </script>
+</head>
+<body>
+    <h1>header - 0</h1>
+    <h2>header - 1</h2>
+    <h1>header - 2</h1>
+    <h2>header - 3</h2>
+    <h1>header - 4</h1>
+</body>
+</html>

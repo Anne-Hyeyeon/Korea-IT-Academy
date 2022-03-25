@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            // eq():특정 위치에 존재하는 문서 객체를 선택
+            // fisrt(): 첫 번째에 위치하는 문서 객체를 선택
+            // last(): 마지막에 위치하는 문서 객체를 선택
+            // $('h3').eq(0).css('backgroundColor','orange');
+            // $('h3').eq(-1).css('backgroundColor','red');
+            $('h3').first().css('backgroundColor','orange');
+            $('h3').last().css('backgroundColor','red');
+            // -1을 적을 경우, 0번째의 전인 맨 마지막 것이 선택된다.
+        });
+    </script>
+</head>
+<body>
+    <h3>header - 0</h3>
+    <h3>header - 1</h3>
+    <h3>header - 2</h3>
+</body>
+</html>

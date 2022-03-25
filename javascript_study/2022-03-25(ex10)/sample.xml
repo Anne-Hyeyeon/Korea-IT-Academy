@@ -1,0 +1,14 @@
+<friends>
+   <friend>
+       <name>김혜연</name>
+       <language>Ruby</language>
+   </friend>
+   <friend>
+       <name>김민재</name>
+       <language>Basic</language>
+   </friend>
+   <friend>
+       <name>김혜진</name>
+       <language>C#</language>
+   </friend>
+</friends>

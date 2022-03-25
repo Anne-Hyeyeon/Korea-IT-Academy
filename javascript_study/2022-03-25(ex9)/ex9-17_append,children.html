@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+            function chkData(){
+                $('#list li').each(function(){
+                    $(this).children('input').click();
+                    $(this).append('Korea');
+                    // append()선택된 요소의 마지막에 새로운 요소나 콘텐츠를 추가한다.
+                });
+            };
+            // 함수를 작동시키려면 도큐먼트 레디 안에 집어넣지 마라. 밖에 빼줘야 한다.
+    </script>
+</head>
+<body>
+    <button onclick="chkData();">클릭하세요</button>
+    <ul id="list">
+        <li><input type="checkbox" name="a" value="1">동해물과 백두산이</li>
+        <li><input type="checkbox" name="a" value="1">동해물과 백두산이</li>
+        <li><input type="checkbox" name="a" value="1">동해물과 백두산이</li>
+        <li><input type="checkbox" name="a" value="1">동해물과 백두산이</li>
+        <li><input type="checkbox" name="a" value="1">동해물과 백두산이</li>
+        <li><input type="checkbox" name="a" value="1">동해물과 백두산이</li>
+        <li><input type="checkbox" name="a" value="1">동해물과 백두산이</li>
+        <li><input type="checkbox" name="a" value="1">동해물과 백두산이</li>
+        <li><input type="checkbox" name="a" value="1">동해물과 백두산이</li>
+        <li><input type="checkbox" name="a" value="1">동해물과 백두산이</li>
+        <li><input type="checkbox" name="a" value="1">동해물과 백두산이</li>
+    </ul>
+</body>
+</html>

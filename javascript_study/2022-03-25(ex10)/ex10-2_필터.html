@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+          // 여러가지의 CSS쓰기 - 객체 방식
+            $('h3').filter(':odd').css(
+              {backgroundColor:'black',                color:'white',
+              fontSize:'24px',
+              }
+            )
+        });
+    </script>
+</head>
+<body>
+    <h3>header - 0</h3>
+    <h3>header - 1</h3>
+    <h3>header - 2</h3>
+    <h3>header - 3</h3>
+    <h3>header - 4</h3>
+    <h3>header - 5</h3>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <style>
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+          $('h1').addClass(function(index){
+            return 'class' + index;
+          });  
+    });
+    </script>
+</head>
+<body>
+  <h1>Header - 0</h1>
+  <h1>Header - 1</h1>
+  <h1>Header - 2</h1>
+</body>
+</html>

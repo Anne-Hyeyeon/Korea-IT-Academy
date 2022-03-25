@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <style>
+      div{
+        margin: 10px;
+        border: 3px solid black;
+        border-radius: 10px;
+        float: left;
+        width: 120px;
+        height: 120px;
+        text-align: center;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        // xml = html처럼 데이터를 꾸며서 쓰는 것.
+        //변수 선언
+         var xml = '';
+         xml += '<friends>';
+         xml += '   <friend>';
+         xml += '       <name>김혜연</name>';
+         xml += '       <language>Ruby</language>';
+         xml += '   </friend>';
+         xml += '   <friend>';
+         xml += '       <name>김민재</name>';
+         xml += '       <language>Basic</language>';
+         xml += '   </friend>';
+         xml += '   <friend>';
+         xml += '       <name>김혜진</name>';
+         xml += '       <language>C#</language>';
+         xml += '   </friend>';
+         xml += '</friends>';
+        $(function(){
+            // parseXML : XML을 해석해줌
+            var xmlDoc = $.parseXML(xml);
+            $(xmlDoc).find('friend').each(function(index){
+                // 변수선언
+                var output = '';
+                output += '<div>';
+                output += ' <h1>' + $(this).find('name').text() + '</h1>';
+                output += ' <p>' + $(this).find('language').text() + '</p>';
+                output += '</div>'
+                // 출력
+                document.body.innerHTML += output;
+            })
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>

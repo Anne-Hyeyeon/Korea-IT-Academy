@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+          // 여러가지의 CSS쓰기 - 3개씩 끊어서 사용하고 싶을 때
+          // 함수는 기본적으로 인덱스라는 걸 가지고 있다.
+            $('h3').filter(function(index){
+              return index % 3 == 0;
+            }).css(
+              {backgroundColor:'black',                color:'white',
+              fontSize:'24px',
+              }
+            )
+        });
+    </script>
+</head>
+<body>
+    <h3>header - 0</h3>
+    <h3>header - 1</h3>
+    <h3>header - 2</h3>
+    <h3>header - 3</h3>
+    <h3>header - 4</h3>
+    <h3>header - 5</h3>
+</body>
+</html>

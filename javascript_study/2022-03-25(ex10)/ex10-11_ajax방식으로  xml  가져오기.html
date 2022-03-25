@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <style>
+      div{
+        margin: 10px;
+        border: 3px solid black;
+        border-radius: 10px;
+        float: left;
+        width: 120px;
+        height: 120px;
+        text-align: center;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+          $(function(){
+            //   ajax 방식으로 xml파일 가져오기
+              $.ajax({
+                  type:'GET',
+                  dataType:'xml',
+                  url:'sample.xml',
+                  success:function(xml){               
+                    $(xml).find('friend').each(function(index){
+                    // 변수선언
+                    var output = '';
+                    output += '<div>';
+                    output += ' <h1>' + $(this).find('name').text() + '</h1>';
+                    output += ' <p>' + $(this).find('language').text() + '</p>';
+                    output += '</div>'
+                    // 출력
+                    document.body.innerHTML += output;
+                })                  
+            }
+        })
+    });
+    </script>
+</head>
+<body>
+</body>
+</html>
