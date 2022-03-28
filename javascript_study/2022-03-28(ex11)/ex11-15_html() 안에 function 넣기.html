@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            // 변수 선언
+            $('div').html(function(index){
+                return '<h1>Header - '+index+'</h1>'
+            });
+        });  
+        // 특정 번호를 넣는 법 : index 값 이용하기
+    </script>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

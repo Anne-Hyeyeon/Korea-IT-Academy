@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        margin: 5px;
+        padding: 3px;
+        border: 3px solid black;
+      }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.7.js"></script>
+    <script>
+        $(function(){
+          // 이벤트 연결
+          $('div').click(function(){
+            // 변수 선언
+            var header = $('h1',this).text();
+            var paragraph = $('p',this).text();
+            // 'p', this는 this, 즉 div 안에 있는 p를 뜻한다.
+            alert(header+'\n'+paragraph);
+          })
+        }); 
+    </script>
+</head>
+<body>
+  <div>
+    <h1>Header 1</h1>
+    <p>Paragraph</p>
+  </div>
+  <div>
+    <h1>Header 2</h1>
+    <p>Paragraph</p>
+  </div>
+  <div>
+    <h1>Header 3</h1>
+    <p>Paragraph</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+          $(function(){
+            var color = ['red','orange','purple'];
+            $('h1').css({
+                color:function(index){
+                return color[index];
+                },
+                backgroundColor:'black'
+              });
+          });  
+          // CSS() 안에 style에 들어가는 내용 적어도 됨.
+    </script>
+</head>
+<body>
+  <h1>header - 0</h1>
+  <h1>header - 1</h1>
+  <h1>header - 2</h1>
+</body>
+</html>

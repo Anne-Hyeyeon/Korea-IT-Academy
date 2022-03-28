@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <style>
+    .first{
+      color: red;
+    }
+    .second{
+      color: pink;
+    }
+    .first{
+      color: orange;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+          // 변수선언
+          var color = $('h1').css('color');
+          // 출력
+          alert(color);
+    });
+    </script>
+</head>
+<body>
+  <h1 class="first">header - 0</h1>
+  <h1 class="second">header - 1</h1>
+  <h1 class="third">header - 2</h1>
+</body>
+</html>

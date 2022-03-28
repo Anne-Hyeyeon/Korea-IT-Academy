@@ -1,0 +1,10 @@
+[jQuery 단축 이벤트 메서드]
+
+사용법
+$(selector).method(function(event){ });
+
+blur, focus, load, unload, click, focusin, resize, mouseenter, mouseleave, mouseover, chage, select, error, ready 등
+
+jQuery 메서드
+toggle() : click 이벤트를 여러 이벤트 핸들러를 번갈아가면서 실행할 수 있게 연결함.
+hover() : mouseenter이벤트와 mouseleave이벤트를 동시에 연결. 

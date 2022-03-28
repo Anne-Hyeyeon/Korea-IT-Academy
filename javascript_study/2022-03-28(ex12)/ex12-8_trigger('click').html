@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <script src="https://code.jquery.com/jquery-1.7.js"></script>
+    <script>
+        $(function(){
+          $('h1').click(function(){
+            $(this).html(function(index,html){
+              return html + '★';
+            });
+          });
+          setInterval(function(){
+              $('h1').last().trigger('click');
+              // trigger click ->  내가 클릭하지 않았지만 클릭한것처럼 행동시켜주는 것.
+              // $('h1').last().click();
+            },1000)
+        }); 
+    </script>
+</head>
+<body>
+  <h1>Start: </h1>
+  <h1>Start: </h1>
+</body>
+</html>

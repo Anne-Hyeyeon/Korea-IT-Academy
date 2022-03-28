@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <style>
+      img{
+          width: 100px;
+      }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            // 함수를 2초마다 실행
+            setInterval(function(){
+                $('img').first().appendTo('body');
+            },2000)
+        }); 
+    </script>
+</head>
+<body>
+    <img src="../2022-03-25(ex11)/img/Chrysanthemum.jpg">
+    <img src="../2022-03-25(ex11)/img/Koala.jpg">
+    <img src="../2022-03-25(ex11)/img/Desert.jpg">
+    <img src="../2022-03-25(ex11)/img/Jellyfish.jpg">
+</body>
+</html>

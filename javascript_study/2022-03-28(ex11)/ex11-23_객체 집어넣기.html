@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            // 변수선언
+            var content = [
+                {name:'김혜연',region:'서울특별시 동작구'},
+                {name:'김민재',region:'서울특별시 영등포구'},
+                {name:'김혜진',region:'진주시 칠암동'},
+            ];
+            // 문서객체를 추가
+            $('div').append(function(index){
+                var item = content[index];
+                var output = '';
+                output += '<h1>'+item.name+'</h1>';
+                output += '<h2>'+item.region+'</h2>';
+                return output;
+            })
+        }); 
+    </script>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

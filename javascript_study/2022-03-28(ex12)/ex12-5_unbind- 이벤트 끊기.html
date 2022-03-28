@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <style>
+    .reverse{
+      background-color: black;
+      color: white;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.7.js"></script>
+    <script>
+        $(function(){
+          // 이벤트 연결, 끊기
+          $('h1').click(function(){
+            $(this).html('CLICK');
+            alert(' 이벤트가 발생했습니다.');
+            // unbind는 click 이벤트를 없애준다.
+            $(this).unbind();
+          })
+        }); 
+    </script>
+</head>
+<body>
+    <h1>header - 0</h1>
+    <h1>header - 1</h1>
+    <h1>header - 2</h1>
+</body>
+</html>
