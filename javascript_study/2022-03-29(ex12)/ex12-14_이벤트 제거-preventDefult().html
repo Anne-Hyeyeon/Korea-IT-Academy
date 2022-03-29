@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+
+  <script src="https://code.jquery.com/jquery-1.7.js"></script>
+    <script>
+        $(function(){
+            $('#my_form').submit(function(event){
+                // 입력 양식의 value를 가져온다.
+                var name = $('#name').val();
+                var password = $('#password').val();
+                // 출력
+                alert(name+' : '+password);
+                // 기본 이벤트 제거
+                event.preventDefault();
+                // submit 버튼이 눌러져도 submit 역할을 하지 못하게 만들었다. 
+            });
+        }); 
+    </script>
+</head>
+<body>
+    <form id="my_form">
+        <table>
+            <tr>
+                <td>이름: </td>
+                <td><input type="text" name="name" id="name" /></td>
+            </tr>
+            <tr>
+                <td>비밀번호: </td>
+                <td><input type="password" name="name" id="password" /></td>
+            </tr>
+        </table>
+        <input type="submit" value="제출" />
+    </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+
+  <script src="https://code.jquery.com/jquery-1.7.js"></script>
+    <script>
+        $(function(){
+            $('h1').click(function(){
+                $(this).next().toggle('fast',function(){
+                    alert('Effect End...');
+                });
+                // toggle 두번째 자리에 무언가를 넣으면, 끝나는 시점에 일어날 것들을 callback 할 수 있다.
+                // slow 자리에 fast, 숫자 넣을 수 있음.
+                // 선택한 요소의 다음 요소를 선택.
+            });
+        }); 
+    </script>
+</head>
+<body>
+    <h1>Open & Close</h1>
+    <div>
+        <h1>안녕하세요</h1>
+        <p>저는 김혜연입니다.</p>
+    </div>
+    <h1>Open & Close</h1>
+    <div>
+        <h1>반갑습니다.</h1>
+        <p>오늘 저녁밥은 데리버거 세트였습니다.</p>
+    </div>
+</body>
+</html>

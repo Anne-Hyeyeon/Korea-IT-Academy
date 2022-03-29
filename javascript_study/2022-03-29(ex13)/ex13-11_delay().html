@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <style>
+    div {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      margin-top: 10px;
+      background-color: orange;
+      border: 1px solid black;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.7.js"></script>
+  <script>
+    $(function(){
+        $('div').each(function(index){
+          $(this).delay(index*500).animate({
+            left:500
+            // 인덱스를 이용해 박스별로 딜레이를 준것임.
+          },'slow');
+        })
+      }); 
+  </script>       
+</head>
+<body>
+  <div></div><div></div>
+  <div></div><div></div>
+  <div></div><div></div>
+</body>
+</html>

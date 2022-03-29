@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <style>
+    .reverse {
+      background-color: black;
+      color: white;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.7.js"></script>
+  <script src="../13장_예제재료/jquery-ui-1.8.16.custom.min.js"></script>
+  <script>
+    $(function(){
+        $('div').each(function(index){
+          $('div').hover(function(){
+            $(this).addClass('reverse',1000);
+          },function(){
+            $(this).removeClass('reverse',1000);
+          });
+        });
+      }); 
+  </script>       
+</head>
+<body>
+  <div>
+    <h1>내일 먹을 것</h1>
+    <p>닭꼬치는 정말 맛있다고 합니다.</p>
+  </div>
+  <div>
+    <h1>내일 먹을 것</h1>
+    <p>햄버거 정말 맛있다고 합니다.</p>
+  </div>
+  <div>
+    <h1>내일 먹을 것</h1>
+    <p>닭꼬치는 정말 맛있다고 합니다.</p>
+  </div>
+</body>
+</html>

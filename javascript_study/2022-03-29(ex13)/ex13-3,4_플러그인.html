@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <style>
+        ul{
+            list-style: none;
+        }
+        img{
+            width: 500px;
+            height: 350px;
+        }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.7.js"></script>
+  <script src="../13장_예제재료/jquery.innerfade.js"></script>
+  <!-- 제이쿼리 플러그인을 사용할 경우, 제이쿼리 스크립트가 항상 위에 있어야 한다. -->
+  <script>
+    $(function(){
+      // innerfade 플러그인 적용
+        $('#inner_fade').innerfade({
+          animationtype: 'slide',
+          speed:750,
+          timeout:2000,
+          type:'random',
+          containerheight: '350px',
+        })
+      }); 
+      // 플러그인 사이트 : upheap.com
+  </script>       
+</head>
+<body>
+    <ul id="inner_fade">
+        <li><img src="../13장_예제재료/Chrysanthemum.jpg"></li>
+        <li><img src="../13장_예제재료/Desert.jpg"></li>
+        <li><img src="../13장_예제재료/Hydrangeas.jpg"></li>
+        <li><img src="../13장_예제재료/Jellyfish.jpg"></li>
+        <li><img src="../13장_예제재료/Koala.jpg"></li>
+        <li><img src="../13장_예제재료/Lighthouse.jpg"></li>
+        <li><img src="../13장_예제재료/Penguins.jpg"></li>
+    </ul>
+</body>
+</html>

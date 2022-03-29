@@ -12,9 +12,13 @@
               var remain = 150 - inputLength;
               $('h1').html(remain);
               
-              if($(this).val().length > 150) {
+              if(inputLength > 150) {
                 alert('150자가 초과되었습니다.');
-                $(this).val().substring(0,150);
+                $(this).prop('readonly',true);
+                $(this).val($(this).val().substring(0, 150));
+              }
+              else{
+                $(this).prop('readonly',false);
               }
             })
         }); 

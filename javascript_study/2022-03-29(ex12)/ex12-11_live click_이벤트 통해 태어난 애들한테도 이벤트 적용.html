@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <script src="https://code.jquery.com/jquery-1.7.js"></script>
+    <script>
+        $(function(){
+            $('h1').live('click',function(){
+                var length = $('h1').length;
+                var targetHTML = $(this).html();
+                // live를 쓰면 이벤트를 통해 태어난 애들한테도 이벤트를 적용시킬 수 있다.
+                $('#wrap').append('<h1>'+length+'-'+targetHTML+'</h1>');
+            })
+        }); 
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <h1>Header</h1>
+    </div>
+</body>
+</html>

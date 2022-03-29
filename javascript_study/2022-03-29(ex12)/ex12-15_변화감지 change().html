@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+
+  <script src="https://code.jquery.com/jquery-1.7.js"></script>
+    <script>
+        $(function(){
+            // change() : 상태값이 변했을 때를 감지. input,textarea,select 태그에 동작.
+            $('#all_check').change(function(){
+                if(this.checked){
+                    $('#check_item').children().attr('checked',true);
+                }else{
+                    $('#check_item').children().attr('checked',false);
+                }
+            })
+        }); 
+    </script>
+</head>
+<body>
+    <input type="checkbox" id="all_check" />
+    <label>All</label>
+    <div id="check_item">
+        <input type="checkbox" />
+        <label>A Option</label>
+        <input type="checkbox" />
+        <label>B Option</label>
+        <input type="checkbox" />
+        <label>C Option</label>
+    </div>
+</body>
+</html>

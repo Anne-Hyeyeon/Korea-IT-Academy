@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <style>
+    div {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      background-color: orange;
+      border: 1px solid black;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.7.js"></script>
+  <script>
+    $(function(){
+      $('div').click(function(){
+        // animate
+        $(this).animate({
+          left: '+=50',
+        },1000).animate({
+          width: '+=50'
+        },1000).animate({
+          height: '+=50'
+        },1000)
+      });
+      }); 
+  </script>       
+</head>
+<body>
+  <div></div>
+</body>
+</html>
