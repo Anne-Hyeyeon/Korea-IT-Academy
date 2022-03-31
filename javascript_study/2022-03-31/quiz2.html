@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <style>
+    #target_remove{
+      display: none;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.7.js"></script>
+  <script>
+    $(function(){
+      $("#text").keyup(function(){
+        // input에 keyup이 되었을 때 무언가를 해라.
+        $("#target").text($("#text").val());
+        });
+      }); 
+  </script>            
+</head>
+<body>
+  <input type="text" id="text" placeholder="텍스트를 입력해보세요." />
+  <h2 id="target"></h2>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <style>
+    #block {
+      background-color: #bca;
+      width: 100px;
+      border: 1px solid green
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.7.js"></script>
+  <script>
+    $(function(){
+      $('#run').click(function(){
+        $('#block').animate({
+          width:200,
+          height:50,
+          fontSize:40,
+          marginLeft:50,
+          borderTopWidth:10,
+          borderLeftWidth:10,
+        },1000);
+      }); 
+    });
+  </script>            
+</head>
+<body>
+  <button id="run">&#62;&#62; Run</button>
+  <div id="block">Hello!</div>
+</body>
+</html>

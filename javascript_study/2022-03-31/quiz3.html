@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <style>
+    #wrap {
+      display: block;
+    }
+    #jquery {
+      position: relative;
+      padding-left: 100px;
+      width: 300px;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.7.js"></script>
+  <script>
+    $(function(){
+      $('#left').click(function(){
+        $('#jquery').animate({
+          left:0
+        });
+      });
+      $('#right').click(function(){
+        $('#jquery').animate({
+          left:100
+        });
+      });
+    }); 
+  </script>            
+</head>
+<body>
+  <div id="wrap">
+    <button id="left">&#60;&#60;</button>
+    <button id="right">&#62;&#62;</button>
+  </div>
+  <img id="jquery" src="./jquery.png" />
+  <!-- <img id="jquery" src="./jquery.png" width="200" style="position:relative;padding-left:100px" -->
+</body>
+</html>

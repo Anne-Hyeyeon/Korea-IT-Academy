@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <script src="https://code.jquery.com/jquery-1.7.js"></script>
+  <script>
+    $(function(){
+        $('#button1').click(function(){
+          $('#target').hide();
+        });
+        $('#button2').click(function(){
+          $('#target').show();
+        }); 
+      }); 
+  </script>            
+</head>
+<body>
+  <p id="target">이것은 p 요소입니다.</p>
+  <button id="button1">감추기</button>
+  <button id="button2">보이기</button>
+</body>
+</html>
