@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/* login */
+.loginArea{width:380px;height:227px;padding-left:300px;margin:200px auto 0;background:url(../images/gate_login_logo_englisheye.png) no-repeat;}
+.loginBox {position: relative;padding: 50px 0 0 10px;}
+.loginBox .iLabel{position: absolute;visibility: visible;font-size:20px;color:#444;line-height: 50px;padding-left: 10px;}
+.loginBox .iText{width:237px;height:50px;padding-left: 10px;font-size: 20px;color:#444;border:1px solid #acd5e5;border-radius: 1px;}
+.loginBox .iText.uid{margin-bottom: 8px;}
+.loginBox .btnLogin {position: absolute;width:112px;height:111px;right:0;top:50px;background-color: #15a0d8;color: #fff;font-size: 24px;border:0;border-radius: 2px;}
+.loginBox .help li{float: left;font-size: 20px;margin-top: 20px;}
+.loginBox .help li a {color:#999;}
+.loginBox .help li.first {padding-right: 12px;margin-right: 12px;border-right: 1px solid #e5e5e5;}
+.copyArea{position: relative;width:100%;height:237px;margin-top:90px;background-color: #ffd700;background-image: url(../images/gate_bg_login_div.png);background-repeat: repeat-x;
+background-position: top}
+.copyArea img{position: absolute;left:50%;bottom:50px;margin-left:-250px;}
+
+
+
+
+
+
+

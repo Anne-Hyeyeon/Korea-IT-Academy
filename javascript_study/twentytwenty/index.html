@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-1.7.js"></script>
+  <link rel="stylesheet" href="./css/twentytwenty.css" />
+  <link rel="stylesheet" href="./css/foundation.css" />
+  <script src="./js/jquery.twentytwenty.js"></script>
+  <script src="./js/jquery.event.move.js"></script>
+  <style>
+    #container1 {
+      width:600px;
+    }
+  </style>
+  <title>Twenty Twenty</title>
+  <script>
+    $(function(){
+      $(window).load(function() {
+       $("#container1").twentytwenty();
+      });
+     });
+   </script>
+</head>
+<body>
+  <div id="container1">
+    <img src="https://picsum.photos/1000/300?random=1" />
+    <img src="https://picsum.photos/1000/300?random=2" />
+  </div>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+    <meta charset='euc_kr'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <script src="https://code.jquery.com/jquery-1.7.js"></script>
+    <link rel='stylesheet' href='./css/reset.css'>
+    <link rel='stylesheet' href='./css/common.css'>
+    <link rel='stylesheet' href='./css/mainpage.css'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      $(function(){
+        const swiper = new Swiper('.swiper', {
+          // Optional parameters
+          loop: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+
+          // If we need pagination
+          pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets:true,
+          },
+
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+
+          // And if we need scrollbar
+          // scrollbar: {
+          //   el: '.swiper-scrollbar',
+          // },
+        });
+      });
+    </script>
+    <title>관세청 몰수품 및 국고귀속물품 수탁판매 - 전자입찰</title>
+</head>
+<body>
+    <div class='main-wrap'>
+        <div class='header'>
+            <div class='inner'>
+                <div class='logo'>
+                    <div class="top_info">
+                        <!-- 로그인 후 -->
+                        <span>에이치 비 케이 무역(HBK Trade)</span>
+                        <a href="#" class="btn tp01">로그아웃</a>
+                        <a href="#" class="btn tp02">정보수정</a>
+                        <!-- //로그인 후 -->
+                        <!-- 로그인 전
+                        <a href="#" class="btn tp01">로그인</a>
+                        <a href="#" class="btn tp02">회원가입</a>
+                        <!-- //로그인 전-->
+                    </div>
+                    <h1>
+                    <a href="#"><img src='imgs/logo.png' alt='관세청 몰수품 및 국고귀속물품 수탁판매'></a>
+                    </h1>
+                    <ul class='gnb'>
+                        <li><a href='#'>사업단 소개</a></li>
+                        <li class='on'><a href='#'>전자입찰</a></li>
+                        <li><a href='#'>세관물품쇼핑</a></li>
+                    </ul>
+                </div>
+                <div class='menu_main'>
+                    <ul>
+                        <li><a href='elec_bid_sub_01.html'>입찰공고</a></li>
+                        <li><a href='elec_bid_sub_02.html'>입찰신청</a></li>
+                        <li><a href='elec_bid_sub_03.html'>물품검색</a></li>
+                        <li><a href='#'>회원등록안내</a></li>
+                        <li><a href='#'>전자입찰 초보가이드</a></li>
+                        <li><a href='#'>마이페이지</a>
+                            <ul class='sub'>
+                                <li class='on'><a href='#'>미작성 입찰서</a></li>
+                                <li><a href='#'>입찰서 제출</a></li>
+                                <li><a href='#'>낙찰 내역</a></li>
+                                <li><a href='#'>회원 정보 변경</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class='banner main'>
+            <!-- Swiper Start -->
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="../bohun (1)/imgs/banner_type01.jpg">
+                </div>
+                <div class="swiper-slide"><img src="../bohun (1)/imgs/banner_type02.jpg"></div>
+                <div class="swiper-slide"><img src="../bohun (1)/imgs/banner_type03.jpg"></div>
+                <div class="swiper-slide"><img src="../bohun (1)/imgs/banner_type04.jpg"></div>
+                 </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <!-- Swiper End -->
+        </div>
+        <div class='contents main'>
+            <div class='inner'>
+                <div class='cnt_info'>
+                    <div class='cnt_login'>
+                        <!-- 로그인 전
+                        <div class='sel_member'>
+                            <input type='radio' id='private' name='sel_member' value='private' checked><label for='private'>개인회원</label>
+                            <input type='radio' id='corporate' name='sel_member' value='corporate'><label for='corporate'>개인회원</label>
+                        </div>
+                        <div class='input'>
+                            <input type="text" placeholder="아이디" name="uname" required>
+                            <input type="password" placeholder="비밀번호" name="psw" required>
+                            <button type='submit'>Login</button>
+                        </div>
+                        <div class='find'>
+                            <a href='#'>아이디 / 비밀번호 찾기</a>
+                            <a href='#'>회원가입</a>
+                        </div>
+                        -->
+                        <!-- 로그인 후 -->
+                        <div class="welcome-msg">
+                            <div class='txt'>
+                              <i></i>
+                              <p><strong>UserID</strong>님 반갑습니다.</p>
+                              <p>인증만료: <span class="point3">2025-01-16 12:23:44</span></p>
+                            </div>
+                            <div>
+                                <a class="btn tp01" href="#">로그아웃</a>
+                                <a class="btn tp02" href="#">정보수정</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='latest'>
+                        <div class='tit'>
+                            <i class='icon notice'></i>
+                            공지사항
+                            <a class='btn_more' href='#'>더보기</a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href='#'>(사)장애인녹색일자리사랑회 대표자변경안내
+                                </a>
+                                <span class='date'>21-05-24</span>
+                            </li>
+                            <li>
+                                <a href='#'>(사)장애인녹색일자리사랑회 대표자변경안내
+                                </a>
+                                <span class='date'>21-05-24</span>
+                            </li>
+                            <li>
+                                <a href='#'>(사)장애인녹색일자리사랑회 대표자변경안내
+                                </a>
+                                <span class='date'>21-05-24</span>
+                            </li>
+                            <li>
+                                <a href='#'>(사)장애인녹색일자리사랑회 대표자변경안내
+                                </a>
+                                <span class='date'>21-05-24</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class='latest'>
+                        <div class='tit'>
+                            <i class='icon bidding'></i>
+                            입찰공고
+                            <a class='btn_more' href='#'>더보기</a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href='#'><span class='badge emergency'>긴급공고</span>(사)장애인녹색일자리사랑회 대표자변경안내
+                                </a>
+                                <span class='date'>21-05-24</span>
+                            </li>
+                            <li>
+                                <a href='#'><span class='badge glitter'>일반공고</span>(사)장애인녹색일자리사랑회 대표자변경안내
+                                </a>
+                                <span class='date'>21-05-24</span>
+                            </li>
+                            <li>
+                                <a href='#'><span class='badge normal'>일반공고</span>(사)장애인녹색일자리사랑회 대표자변경안내
+                                </a>
+                                <span class='date'>21-05-24</span>
+                            </li>
+                            <li>
+                                <a href='#'><span class='badge normal'>일반공고</span>(사)장애인녹색일자리사랑회 대표자변경안내
+                                </a>
+                                <span class='date'>21-05-24</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class='quick_menu'>
+                    <div class='tit'>빠른메뉴</div>
+                    <ul>
+                        <li><a href='#'><img src='imgs/ico_quickmenu_01.png' />
+                            <p>입찰안내</p></a></li>
+                        <li><a href='#'><img src='imgs/ico_quickmenu_02.png' /><p>자주묻는 질문</p></a></li>
+                        <li><a href='#'><img src='imgs/ico_quickmenu_03.png' /><p>게시판</p></a></li>
+                        <li><a href='#'><img src='imgs/ico_quickmenu_04.png' /><p>공람신청서<br />다운로드</p></a></li>
+                        <li><a href='#'><img src='imgs/ico_quickmenu_05.png' />
+                            <p>회원등록안내</p></a></li>
+                        <li><a href='#'><img src='imgs/ico_quickmenu_06.png' />
+                            <p>오시는길</p></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class='footer'>
+            <div class='inner'>
+                <span class='logo'></span>
+                <div class='shortcut'>
+                    <ul>
+                        <li><a href='#'>개인정보취급방침</a></li>
+                        <li><a href='#'>이용약관</a></li>
+                        <li><a href='#'>이메일 무단수집거부</a></li>
+                    </ul>
+                </div>
+                <ul class='addr'>
+                    <li>(사)장애인녹색일자리사랑회유통사업단</li>
+                    <li>대표자: 구교민, 개인정보관리 책임자: 행정팀장,</li>
+                    <li>사업자번호 132-82-13720, 서울특별시 강남구 학동로 4길 15,  통신판매업신고: 제 2021-서울강남-06960호</li>
+                    <li>전화: <a href='tel:02-511-0322'>02-511-0322</a>, 팩스: 02-511-0323, 메일 : <a class='oneline' href='mailto:oosryun@utong.or.kr'>oosryun@utong.or.kr</a></li>
+                    <li class='copyright'>Copyright ⓒ Association of the Green Job Creation for the Disabled. All Rights Reserved.</li>
+                </ul>
+            </div>
+       </div>
+    </div>
+</body>
+</html>

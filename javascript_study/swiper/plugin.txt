@@ -1,0 +1,7 @@
+swiper 
+Plugin 적용 방법
+1.CSS
+2.JS
+3. custom value 적용방법을 알아야 함.
+
+CDN : 링크 연결 방식

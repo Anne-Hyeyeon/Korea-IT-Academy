@@ -1,0 +1,125 @@
+@charset "euc-kr";
+
+
+/* mainpages contents */
+.contents {margin-top: 20px;}
+.contents .cnt_info {padding:0 15px}
+.contents .cnt_info:after{content:'';display: block;clear: both;}
+
+
+/* banner */
+.banner {display:flex;flex-direction: column;align-items: center;justify-content: center;text-align: center;color:#fff;line-height: 1.4;background-position: center;background-size: cover;}
+.banner.main {height: 200px;}
+.banner.sub {height: 180px;}
+.banner .txt-tit {margin:0 auto;font-size: 16px;margin-bottom: 20px;}
+.banner .txt-desc {margin:0 auto;font-size: 12px;}
+
+
+/* mainpages lastest */
+.latest {float:left;width:100%;min-height: 162px;margin-bottom: 10px; padding:15px 20px;border:1px solid #bcbcbc;box-sizing: border-box;}
+.latest .tit{position: relative;height:22px;font-size: 15px;font-weight: 800;}
+.latest .btn_more {position: absolute;right: 0;top:0;font-size: 14px;color: #5b5b5b;}
+.latest .btn_more:after{content:'';display:inline-block;position: absolute;top: 50%;margin-top: -4px;right: -8px;width:6px;height:8px;background:url(../imgs/ico_arrow.png) no-repeat -400px -100px;}
+.latest ul {margin-top: 12px;}
+.latest ul li {position: relative;padding-left:6px;height:24px;line-height: 1.3;}
+.latest ul li a {display: inline-block;font-size: 15px;color:#000;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width: 56%;}
+.latest.faq ul li a {max-width: 100%}
+.latest ul li a:hover {color:#007cb6}
+.latest ul li .date {position: absolute;right:0;}
+.latest ul li:before{content:'';position:absolute;left:0;top:50%;width:2px;height:2px;margin-top: -4px; background: #7f7f7f;}
+.latest ul li a:hover .badge {color:#000}
+.latest ul li a:hover .badge.emergency {background: #e29090}
+.latest ul li a:hover .badge.normal {background: #96c8df}
+.latest .badge{height:14px;line-height: 14px;vertical-align: top;}
+
+
+/* mainpages login */
+.cnt_login {float:right;width:100%;margin-bottom: 10px;padding:12px 15px;background:#f6f6f6;border:1px solid #bebebe;box-sizing: border-box;font-size: 14px;}
+.cnt_login .input{position: relative;height:auto;margin:15px 0 12px;}
+.cnt_login input[type='radio'], .cnt_login input[type='radio']+label{cursor: pointer;}
+.cnt_login .input input{width:68%;height:28px;padding-left: 5px;border:1px solid #b2b2b2;box-sizing: border-box;}
+.cnt_login .input input:first-child{margin-bottom: 10px;}
+.cnt_login .input button[type='submit'] {position: absolute;right:0;top:0;width:30%;height:66px;background-color: #007cb6;border:0;color:#fff;}
+.cnt_login .find a{position: relative;color: #000;font-size: 13px;}
+.cnt_login .find a:first-child {margin-right: 20px;}
+.cnt_login .find a:first-child:after {content: '';position: absolute;right:-12px;top:3px;width:1px;height:14px;background-color: #b2b2b2;}
+.cnt_login .welcome-msg {padding:0;text-align: center;}
+.cnt_login .welcome-msg .txt {padding: 0 0 20px;text-align: center;line-height: 1.15}
+.cnt_login .welcome-msg i {display: inline-block;width:30px;height:30px;margin-bottom: 10px;margin-right: 10px;background: url(../imgs/ico_user.png) no-repeat;}
+
+
+/* mainpages quick menu */
+.quick_menu {margin-top: 20px;padding:18px 15px;background-color: #f9f9f9;font-size: 17px;text-align: center;}
+.quick_menu:after{content: '';display: block;clear: both;}
+.quick_menu .tit {font-weight: bold;}
+.quick_menu ul{margin-top:17px;justify-content: space-between;}
+.quick_menu li {display: inline-block;margin:0 1% 10px;vertical-align: top}
+.quick_menu li a {color:#000;font-size: 13px;line-height: 1.2;}
+.quick_menu li a .image {overflow:hidden;position: relative;width:155px;height:108px;margin-bottom: 5px;border:1px solid #ccc;}
+.quick_menu li a img {max-width: 100px;}
+.quick_menu li a .image img{position: absolute;left:0;top:50%;width:100%;max-width:100%;transform: translateY(-50%)}
+.quick_menu .prd_name {width:155px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+
+
+/* Tablet & Desktop Device */
+@media all and (min-width:767px) {
+    body {min-width: auto;}
+    .select_menu .menu .tit {font-size: 30px;}
+    .select_menu .menu .quick {font-size: 14px;width:120px;height:30px;line-height:30px;margin:15px auto 0;}
+}
+
+
+/* Tablet Device */
+@media all and (min-width:768px) and (max-width:1119px) {
+    body{min-width:auto ;}
+    .main-wrap .header .gnb {margin: 10px 0 10px 0}
+    .main-wrap .header .menu_main {margin-top: 0;}
+    .main-wrap .header .menu_main li .sub {top:40px;}
+    .banner.main{height: 220px}
+    .contents.main{padding: 0 20px}
+    .sel_member {position: relative;float: left;height: 80px;width: 100px;padding: 25px 0 0 0;z-index: 10}
+    .cnt_login input[type='radio'], .cnt_login input[type='radio']+label{display: inline-block;margin-bottom: 10px;}
+    .cnt_login .input input {width:55%}
+    .latest {width:49.5%;margin-left:.5%}
+    .latest:nth-child(2){margin-left: 0;margin-right: .5%}
+    .contents .cnt_info {padding: 0;}
+    .quick_menu li {margin-left:.5%;margin-right: .5%}
+    .main-wrap .header .logo img{max-height: 28px;}
+    .main-wrap .header .gnb li a{line-height: 40px;height: 40px; padding:0 5px;font-size: 20px;}
+    .main-wrap .header .menu_main li a {height:40px;line-height: 40px;padding:0 14px;font-size: 16px;}
+    .banner .txt-tit {max-width:480px;font-size: 20px}
+    .banner .txt-desc {max-width:480px;font-size: 14px}
+    .cnt_login {float: none;height: auto;}
+    .cnt_login .input button[type='submit'] {height: 64px;}
+    .gatepage-wrap .header h1 .logo img {width:100%;max-height:28px}
+    .gatepage-wrap .header {height:180px;}
+    .select_menu .menu {height:500px;}
+    .footer {margin-top: 50px;}
+    .footer {position:relative;}
+}
+
+
+/* Desktop Device */
+@media all and (min-width:1120px) {
+    body{min-width: 1120px;}
+    .banner.main {height: 354px;}
+    .banner.sub {height: 250px;}
+    .main-wrap .header .menu_main li .sub {top:40px;}
+    .main-wrap .header .logo img{height:28px;}
+    .main-wrap .header .gnb{margin-top: 0;}
+    .main-wrap .header .gnb li a{line-height: 40px;height: 40px; padding:0 5px;font-size: 20px;}
+    .main-wrap .header .menu_main li a {line-height: 40px;height: 40px;padding:0 18px;font-size: 18px;}
+    .banner.main {height: 354px;}
+    .contents .cnt_info {padding: 0;}
+    .gatepage-wrap .header h1 .logo img {width:100%;max-height:28px}
+    .gatepage-wrap .header {height:180px;}
+    .banner .txt-tit{width: 490px;font-size: 23px}
+    .banner .txt-desc{width: 480px;font-size: 17px}
+    .latest {width:395px;margin-right:12px;}
+    .cnt_login {width:306px;height:162px;}
+    .quick_menu {display: flex;flex-direction: column;}
+    .quick_menu ul{display: flex;padding: 0 30px}
+    .quick_menu li a {font-size: 15px;}
+    .quick_menu li a img {max-width: 110px;}
+    .footer {position:relative;margin-top: 90px;}
+}

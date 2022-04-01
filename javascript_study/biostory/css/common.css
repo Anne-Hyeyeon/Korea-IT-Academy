@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/* Common */
+body{min-width: 1200px;font-family: "dotum"}
+.inner{position:relative;width:1020px;margin:0 auto;}
+header{height:100px;background:#527700 url("../images/bg_pattern.png");}
+header .inner{height: 100px;}
+header .bs_logo{float:left;margin-top: 16px;}
+header .top_menu{position: absolute;right:0;top:15px;}
+header .top_menu li{position: relative;float:left;padding:0 10px;}
+header .top_menu li:after{content: "";position: absolute;left: 0;top: 50%;margin-top: -4px;width: 0;height: 9px;border-left: 1px solid #dde5cc;}
+header .top_menu li:first-child:after{display: none;}
+header .top_menu a {color:#fff;}
+header .top_menu a:hover{text-decoration: underline;}
+header .gnb {position: absolute;bottom:0;right: 0;}
+header .gnb li{position:relative;float: left;}
+header .gnb li a{display:inline-block;height:50px;line-height:50px;font-size:16px;color:#fff;font-family: "Noto Sans KR";padding:0 30px;}
+header .gnb li a:hover{text-decoration: underline;}
+header .gnb li:last-child a{padding-right: 10px;}
+header .gnb li:after{content: '';position: absolute;left: 0;top: 14px;width: 0;height: 15px;border-left: 1px solid #4d7000;border-right: 1px solid #64851a;}
+header .gnb li:first-child:after{display: none;}
+
+/* swipe */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+

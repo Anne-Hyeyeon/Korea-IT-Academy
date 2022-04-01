@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Englisheye Main</title>
+        <script src="https://code.jquery.com/jquery-1.7.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+          $(function(){
+            const swiper = new Swiper('.swiper', {
+              // Optional parameters
+              loop: true,
+              autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+    
+              // If we need pagination
+              pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets:true,
+              },
+    
+              // Navigation arrows
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+            });
+          });
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="inner">
+                <a class="bs_logo" href="#">
+                    <img src="images/logo_biostory.png">
+                </a>
+                <div class="top_menu">
+                    <ul>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">장바구니</a></li>
+                        <li><a href="#">주문배송</a></li>
+                    </ul>
+                </div>
+                <div class="gnb">
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">이엠스토리</a></li>
+                        <li><a href="#">베네믹 상품</a></li>
+                        <li><a href="#">베네믹 스토리</a></li>
+                        <li><a href="#">발효스토리</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="main_banner">
+              <!-- Swiper Start -->
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="images/main_banner_01.png">
+                </div>
+                <div class="swiper-slide"><img src="images/main_banner_01.png"></div>
+                <div class="swiper-slide"><img src="images/main_banner_01.png"></div>
+                <div class="swiper-slide"><img src="images/main_banner_01.png"></div>
+                 </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <!-- Swiper End -->
+        </div>
+        <div class="main_shortcut">
+            <div class="inner">
+                <ul class="sc_list">
+                    <li><a href="#"><img src="images/bnr-mid-01.png"></a></li>
+                    <li><a href="#"><img src="images/bnr-mid-02.png"></a></li>
+                    <li><a href="#"><img src="images/bnr-mid-03.png"></a></li>
+                    <li class="last_ad"><a href="#"><img src="images/bnr-mid-04.png"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main_content">
+            <h2>
+               <div class="inner"><img src="images/m-txt-bestProduct.png"></div>
+            </h2>
+            <div class="prd_list">
+                <div class="inner">
+                    <ul>
+                        <li>
+                            <div class="prd_img"><img src="images/product_detail_01.jpg"></div>
+                            <p class="title">베네믹 발효 홍삼 V</p>
+                            <p class="price">121,000원</p>
+                            <p class="tag">
+                                <img src="images/ico_product_new.gif">
+                                <img src="images/ico_product_recommended.gif">
+                            </p>
+                        </li>
+                        <li>
+                            <div class="prd_img"><img src="images/product_detail_01.jpg"></div>
+                            <p class="title">베네믹 발효 홍삼 V</p>
+                            <p class="price">121,000원</p>
+                            <p class="tag">
+                                <img src="images/ico_product_new.gif">
+                                <img src="images/ico_product_recommended.gif">
+                            </p>
+                        </li>
+                        <li>
+                            <div class="prd_img"><img src="images/product_detail_01.jpg"></div>
+                            <p class="title">베네믹 발효 홍삼 V</p>
+                            <p class="price">121,000원</p>
+                            <p class="tag">
+                                <img src="images/ico_product_new.gif">
+                                <img src="images/ico_product_recommended.gif">
+                            </p>
+                        </li>
+                        <li>
+                            <div class="prd_img"><img src="images/product_detail_01.jpg"></div>
+                            <p class="title">베네믹 발효 홍삼 V</p>
+                            <p class="price">121,000원</p>
+                            <p class="tag">
+                                <img src="images/ico_product_new.gif">
+                                <img src="images/ico_product_recommended.gif">
+                            </p>
+                        </li>
+                        <li>
+                            <div class="prd_img"><img src="images/product_detail_01.jpg"></div>
+                            <p class="title">베네믹 발효 홍삼 V</p>
+                            <p class="price">121,000원</p>
+                            <p class="tag">
+                                <img src="images/ico_product_new.gif">
+                                <img src="images/ico_product_recommended.gif">
+                            </p>
+                        </li>
+                        <li>
+                            <div class="prd_img"><img src="images/product_detail_01.jpg"></div>
+                            <p class="title">베네믹 발효 홍삼 V</p>
+                            <p class="price">121,000원</p>
+                            <p class="tag">
+                                <img src="images/ico_product_new.gif">
+                                <img src="images/ico_product_recommended.gif">
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="notice_wrap">
+                <div class="inner">
+                    <ul>
+                        <li>
+                            <div class="title">공지사항</div>
+                            <ul>
+                                <li><a href="#">오프라인 가맹점 및 대리점 모집</a></li>
+                                <li><a href="#">오프라인 가맹점 및 대리점 모집</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="title">자주하는 질문</div>
+                            <ul>
+                                <li><a href="#">배송조회는 어떻게 하나요?</a></li>
+                                <li><a href="#">배송조회는 어떻게 하나요?</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="title">고객후기</div>
+                            <ul>
+                                <li><a href="#">배송조회는 어떻게 하나요?</a></li>
+                                <li><a href="#">배송조회는 어떻게 하나요?</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_info">
+                <div class="inner">
+                    <ul>
+                        <li><img src="images/footer-img-01.png"></li>
+                        <li><img src="images/footer-img-02.png"></li>
+                        <li><img src="images/footer-img-03.png"></li>
+                        <li><img src="images/footer-img-04.png"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_addr">
+                <div class="inner">
+                    <img src="images/logo_biostory_footer.png">
+                    <ul>
+                        <li>
+                            상호 : (주)바이오스토리   i   대표이사 : 김형진   i   주소 : 경기도 광명시 오리로 649 경일빌딩 901
+                        </li>
+                        <li>사업자등록번호 : 137-86-40123   i   이메일주소 : benemic@naver.com   i   tel: 070.7781.2389   i   fax : 02.868.2398</li>
+                        <li>Copyright 2013 Biostry inc., all rights reserved</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

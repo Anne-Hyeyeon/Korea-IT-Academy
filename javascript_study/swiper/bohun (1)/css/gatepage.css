@@ -1,0 +1,43 @@
+@charset "euc-kr";
+/*************** �ѱۀ **************/
+html,body,.gatepage-wrap{height:100%;}
+.gatepage-wrap {position:relative;font-family: 'NanumSquare';}
+button {cursor:pointer;}
+
+/*************** gatepage header **************/
+/* header */
+.gatepage-wrap .header{display: flex;width:100%;height:70px;align-items: center;transition: all .5s;}
+.gatepage-wrap .header h1 {position:relative;margin:auto;}
+.gatepage-wrap .header h1 .logo{text-align: center;}
+.gatepage-wrap .header h1 .logo img{width: 90%;max-height: 28px;}
+.select_menu{width:100%;text-align: center;}
+.select_menu:after{content: "";display: block;clear: both;}
+.select_menu .menu {width:50%;height:38vh;background:no-repeat center right/cover;transition: all .5s;}
+.select_menu .menu.left{float:left;background-image: url(../imgs/gate_img_left.jpg);}
+.select_menu .menu.right{float:right;background-image: url(../imgs/gate_img_right.jpg);}
+.select_menu .menu a {display:flex;width:100%;height:100%;justify-content: center;flex-direction: column;transition:all .3s;}
+.select_menu .menu a:hover{background-color: rgba(0,0,0,.5);text-decoration: none}
+.select_menu .menu .tit {font-size: 22px;font-weight: 800;color:#fff}
+.select_menu .menu .quick {height:20px;line-height:20px;margin:15px auto 0;padding:2px 13px;font-size:12px;color:#fff;border:1px solid #fff;border-radius: 30px;}
+
+.footer{margin-top: 30px;bottom:0;}
+
+/* Tablet & Desktop Device */
+@media all and (min-width:768px) {
+    .select_menu .menu .tit {font-size: 30px;}
+    .select_menu .menu .quick {font-size: 14px;width:120px;height:30px;line-height:30px;margin:15px auto 0;}
+}
+
+/* Tablet Device */
+@media all and (min-width:768px) and (max-width:1024px) {
+    .gatepage-wrap .header h1 .logo img {width:100%;max-height:28px}
+    .gatepage-wrap .header {height:180px;}
+}
+
+/* Desktop Device */
+@media all and (min-width:1025px) {
+    .gatepage-wrap .header h1 .logo img {width:100%;max-height:28px}
+    .gatepage-wrap .header {height:180px;}
+    .select_menu .menu  {height:50vh}
+    .footer {position:relative;}
+}
