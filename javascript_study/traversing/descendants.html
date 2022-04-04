@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-1.7.js"></script>
+  <script>
+    $(function(){
+        // $('div').children().css({color:'red',border:'2px solid red'}); //자식 선택
+        // $('div').children('p.first').css({color:'red',border:'2px solid red'}); //첫번째 자식만 선택
+        // $('div').find('span').css({color:'red',border:'2px solid red'}); //내 아래에 있는 자식 중 찾고 싶은 애 찾기
+        $('div').find('*').css({color:'red',border:'2px solid red'}); //내 아래에 있는 자손 모두 선택
+        // 정리 : children() : 직계자손을 찾는다. find() : 특정 자손을 찾는다. 
+
+      }); 
+  </script>
+  <style>
+    .descendants *{
+      display: block;
+      border: 2px solid lightgray;
+      color: lightgray;
+      padding: 5px;
+      margin: 15px;
+    }
+  </style>
+</head>
+<body>
+    <div class="descendants" style="width: 500px">div (current element)
+      <p class="first">p (child)
+          <span>span (grandchild)</span>
+      </p>
+      <p class="second">p (child)
+        <span>span (grandchild)</span>
+    </p>
+    </div>
+</body>
+</html>

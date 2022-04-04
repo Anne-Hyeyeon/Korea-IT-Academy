@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-1.7.js"></script>
+  <script>
+    $(function(){
+        // $('h2').siblings().css({color:'red',border:'2px solid red'}); //형제들 선택하기
+        // $('h2').siblings('p').css({color:'red',border:'2px solid red'}); //형제들 중에서 p만 선택하기
+        // $('h2').next().css({color:'red',border:'2px solid red'}); //선택자의 바로 다음 개체 선택
+        // $('h2').nextAll().css({color:'red',border:'2px solid red'}); //선택자 다음의 모든 개체 선택
+        // $('h2').nextUntil().css({color:'red',border:'2px solid red'}); //선택자의 바로 다음부터~ 선택할 개체를 선택하라.
+        // $('h2').prev().css({color:'red',border:'2px solid red'}); //선택자의 바로 이전 개체 선택
+        // $('h2').prevAll().css({color:'red',border:'2px solid red'}); //선택자 이전의 모든 개체 선택
+        $('p').prevUntil('p').css({color:'red',border:'2px solid red'}); //선택자의 바로 전부터 선택할 개체를 제외한 후 선택하라.
+      }); 
+  </script>
+  <style>
+    .siblings *{
+      display: block;
+      border: 2px solid lightgray;
+      color: lightgray;
+      padding: 5px;
+      margin: 15px;
+    }
+  </style>
+</head>
+<body class="siblings">
+    <div>div (parent)
+      <p>p</p>
+      <span>span</span>
+      <h2>h2</h2>
+      <h3>h3</h3>
+      <p>p</p>
+    </div>
+</body>
+</html>
