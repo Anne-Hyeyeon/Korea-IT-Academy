@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.min.js"></script>
+  <title>bootstrap layout-grid</title>
+</head>
+<body>
+  <div class="container ">
+    <div class="row">
+      <div class="col border border-primary">
+        Column
+      </div>
+      <div class="col border">
+        Column
+      </div>
+      <div class="col border">
+        Column
+      </div>
+      <div class="col border">
+        Column
+      </div>
+      <div class="col border">
+        Column
+      </div>
+      <div class="col border">
+        Column
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col border border-primary">
+            1 of 2
+          </div>
+          <div class="col border border-primary">
+            2 of 2
+          </div>
+        </div>
+        <div class="row">
+          <div class="col border border-primary">
+            1 of 3
+          </div>
+          <div class="col border border-primary">
+            2 of 3
+          </div>
+          <div class="col border border-primary">
+            3 of 3
+          </div>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col  border border-secondary">
+            1 of 3
+          </div>
+          <div class="col-6 border border-secondary">
+            2 of 3 (wider)
+          </div>
+          <div class="col border border-secondary">
+            3 of 3
+          </div>
+        </div>
+        <div class="row">
+          <div class="col border border-secondary">
+            1 of 3
+          </div>
+          <div class="col-5 border border-secondary">
+            2 of 3 (wider)
+          </div>
+          <div class="col border border-secondary">
+            3 of 3
+          </div>
+          <div class="container">
+            <div class="row justify-content-md-center">
+              <div class="col col-lg-2 border border-danger">
+                1 of 3
+              </div>
+              <div class="col-md-auto">
+                Variable width content
+              </div>
+              <div class="col col-lg-2 border border-danger">
+                3 of 3
+              </div>
+            </div>
+            <div class="row">
+              <div class="col border border-danger">
+                1 of 3
+              </div>
+              <div class="col-md-auto border border-danger">
+                Variable width content
+              </div>
+              <div class="col col-lg-2 border border-danger">
+                3 of 3
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col border border-info">col</div>
+            <div class="col border border-info">col</div>
+            <div class="col border border-info">col</div>
+            <div class="col border border-info">col</div>
+          </div>
+          <div class="row">
+            <div class="col-8 border border-info">col-8</div>
+            <div class="col-4 border border-info">col-4</div>
+          </div>
+          <div class="row">
+            <div class="col-2 border border-info">col-8</div>
+            <div class="col-2 border border-info">col-4</div>
+            <div class="col-4 border border-info">col-4</div>
+            <div class="col-4 border border-info">col-4</div>
+            <!-- col의 합이 딱 12가 되면 됨. -->
+          </div>
+        </div>
+    </div>
+
+  </div>
+</body>
+</html>
