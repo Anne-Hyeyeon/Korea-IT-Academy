@@ -12118,4 +12118,12 @@ section {
     width: auto;
     height: 400px;
   }
-}  
+    .col-sm-3 {
+      width: 500px;
+      text-align: center;
+    }
+
+    .col-sm-3 li {
+list-style: none;
+    }
+  }
