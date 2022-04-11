@@ -9,6 +9,7 @@
 
 window.addEventListener('DOMContentLoaded', event => {
 
+
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
@@ -51,4 +52,33 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+
+    var quotes = [
+        {"quote":"Success is not final, failure is not fatal: it is the courage to continue that counts.", "author":"Winston Churchill"},
+        {"quote":"Coming together us a beginning; keeping together is progress; working together is success.", "author":"Henry Ford"},
+        {"quote":"Success is simple. Do what's right, the right way, at the right time.", "author":"Arnold H. Glasgow"},
+        {"quote":"Success is nothing more than a few simple disciplines, practiced every day", "author":"Jim Rohn"},
+        {"quote":"Action is the foundational key to all success", "author":"Pablo Picasso"},
+        {"quote":"Success consists of going from failure to failure without loss of enthusiasm", "author":"Winston Churchill"},
+        {"quote":"Try not to become a man of success, but rather try to become a man of value", "author":"Albert Einstein"},
+        {"quote":"Success is how high you bounce when you hit bottom", "author":"George S.Patton"},
+        {"quote":"I've failed over and over and over again in my life and that is why I succeed", "author":"Michael Jordan"}  
+      ];
+      console.log(encodeURIComponent(quotes[1].author))
+      $(document).ready(function (){
+        var randomNo;
+        randomNo = Math.floor(Math.random() * quotes.length);
+        document.getElementById("quote").innerHTML =  "\"" + quotes[randomNo].quote  +  "\"";
+        document.getElementById("author").innerHTML =  quotes[randomNo].author;
+      $(".twittershare").attr("href", "https://twitter.com/share?text=\"" + encodeURIComponent(quotes[randomNo].quote) + "\" - " +  encodeURIComponent(quotes[randomNo].author))
+        $("#quote-button").on("click", (function (){
+          randomNo = Math.floor(Math.random() * quotes.length);
+          $("#quote").html("\"" + quotes[randomNo].quote  +  "\"");
+          $("#author").html(quotes[randomNo].author);
+          $(".twittershare").attr("href", "https://twitter.com/share?text=\"" + encodeURIComponent(quotes[randomNo].quote) + "\" - " +  encodeURIComponent(quotes[randomNo].author))
+        }))
+      });
+      
 });
+
+
