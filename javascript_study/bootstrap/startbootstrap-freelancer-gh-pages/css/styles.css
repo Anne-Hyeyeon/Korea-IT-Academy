@@ -270,11 +270,11 @@ sup {
 }
 
 a {
-  color: #1abc9c;
+  color: #2c3e50;
   text-decoration: underline;
 }
 a:hover {
-  color: #15967d;
+  color: #2c3e50;
 }
 
 a:not([href]):not([class]),
@@ -676,11 +676,16 @@ progress {
   margin-left: auto;
 }
 
+
+
+
+
 @media (min-width: 576px) {
   .container-sm,
   .container {
     max-width: 540px;
   }
+
 }
 @media (min-width: 768px) {
   .container-md,
@@ -11702,10 +11707,6 @@ html {
   color: #2c3e50;
   font-size: 2rem;
 }
-.divider-custom.divider-light .divider-custom-line {
-}
-.divider-custom.divider-light .divider-custom-icon {
-}
 
 .btn-xl {
   padding: 1rem 1.75rem;
@@ -11813,6 +11814,7 @@ html {
   padding-bottom: 6rem;
   width: 1903px;
   height: 780px;
+  background: url(../assets/img/hyeyomi3.jpg);
 }
 .masthead .masthead-heading {
   font-size: 2.75rem;
@@ -12074,3 +12076,46 @@ text-align: center;
   margin-top:5px;
   width:150px;
 }
+
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+}
+
+
+.section-title {
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  color: #345676;
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #d43076;
+  bottom: 0;
+  left: 0;
+}
+.section-title p {
+  margin-bottom: 0;
+}
+
+@media (min-width:100px) and (max-width:575px) {
+  .masthead {
+    background: url(../assets/img/hyeyomi-mobile.jpg);
+    width: auto;
+    height: 400px;
+  }
+}  
