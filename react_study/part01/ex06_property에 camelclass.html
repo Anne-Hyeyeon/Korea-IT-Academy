@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <title>React</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    function handleClickEvent(event){
+      alert(event.target.textContent)
+    }
+    const element = (
+      <h1 className="title" onClick=
+      {handleClickEvent}>
+        React DOM은 HTML Attribute이름과는 다르게 Property 이름에 camelcase를 사용한다. 
+        </h1>
+    )
+      // html에서는 class로 썼는데, react에서는 className으로 쓴다.
+      // onclick은 리액트에서 onClick이다.
+    const root = document.getElementById('root')
+    ReactDOM.render(element, root)
+  </script>
+</body>
+</html>

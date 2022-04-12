@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <title>React</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    // const element = <h1>Hello World!</h1> //따옴표 안붙이고 태그로 써도 인식이 된다.
+    var a = 10 + 10
+    console.log('계산결과는' + a)
+    var name = '1234'
+    console.log('안녕하세요' + name)
+    const root = document.getElementById('root')
+    const element = <h1>Javascript Expression, {10*10/2}</h1>
+    //  태그를 쓸 땐 따옴표를 붙이지 않는다. 따옴표를 붙이면 텍스트로 인식된다.
+    // 간단한 계산은 중괄호 안에!
+    ReactDOM.render(element, root)
+    // 첫 번째 매개변수 : 어떤 요소를 넣을 것인가?
+    // 두 번째 매개변수 : 어디에 넣을 것인가?
+  </script>
+</body>
+</html>
