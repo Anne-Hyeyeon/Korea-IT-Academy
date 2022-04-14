@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <title>React</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+  // ES 6 바벨을 통해 범용적 스크립트로 변환되서 사용된다.
+    //var a = 1;
+    //const b = 2; //수정되지 않을 것임
+    //let c = 3; //var와 비슷하지만 살짝 다르다.
+    //  b = 3; //이렇게 넣으면 콘솔에 오류가 나지롱 (const는 변할 수 없숴)
+    var a = 1
+    a = 5
+    var i = 15
+    for (let i=0;i<=10;i++){
+      console.log(i)
+      // for문 안에서만 적용되는 i는 let으로 적의한다.
+    }
+    console.log(i)
+  </script>
+</body>
+</html>

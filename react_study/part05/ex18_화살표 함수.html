@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <title>React</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    class TestA extends React.Component{
+      a = 10
+      render(){
+      const a = function () { alert(this.a) }
+      // 그냥 만든 함수에서는 this를 인식하지 못함.
+      const b = () => { alert(this.a) }
+      // 화살표 함수의 경우 this를 인식함.
+      // 앞으로 함수를 만들 땐 화살표 함수를 만들어 씁시다...
+
+
+      // try : 오류 찾아줌. 
+      try{
+        a()
+      }catch(e){
+        alert("A에서 문제가 발생했습니다.")
+        alert(e)
+      }
+      try{
+        b()
+      }catch(e){
+        alert("B에서 문제가 발생했습니다.")
+        alert(e)
+      }
+      return <h1 style={{color:this.props.color}}>
+        {this.props.children}
+        </h1>
+     }
+    }
+
+    const element = 
+      <div>
+        <TestA color="hotpink">Hello Component</TestA>
+      </div>
+    ReactDOM.render(element,root)
+  </script>
+</body>
+</html>

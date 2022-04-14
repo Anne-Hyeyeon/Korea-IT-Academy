@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <title>React</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    const root = document.getElementById('root')
+    class App extends React.Component {
+      // constructor란 ? App(예시 태그)이 실행될 때 자동으로 실행되는 함수
+      // constructor랑 super는 항상 같이 넣어주어야 한다.
+      constructor(props){
+        super(props)
+        // 부모의 생성자를 호출 - 현재 부모는 React.Component의 constructor를 실행해 준다.
+      }
+      render(){
+        return(
+          <div>
+            <Square bgcolor="red" /> 
+            {' '}
+            <Square bgcolor="green" /> 
+            {' '}
+            <Square bgcolor="blue" /> 
+          </div>
+        )
+      }
+    }
+    // 중간 {' '} 넣어주면 공백이 생김
+
+    
+    // square라는 컴포넌트 정의
+    class Square extends React.Component {
+      constructor(props){
+        super(props)
+      }
+      render(){
+        const style={
+          display:'inline-block',
+          width: 100,
+          height: 100,
+          backgroundColor:this.props.bgcolor
+        }
+        return <div style={style}></div>
+      }
+    }
+    ReactDOM.render(<App />,root)
+  </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <title>React</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    // 카드 스타일
+    const cardStyle ={
+      border: "1px solid black",
+      padding: 10
+    }
+    // 카드 함수 만들기 - 카드 틀 제공
+    function Card (props){
+      return <div style={cardStyle}>
+        <span>2022년 4월 14일</span>
+        <hr />
+        <span>{props.author}</span>
+       {props.children}
+      </div>
+    }
+
+    const root = document.getElementById('root')
+    const element = <Card author="NoName">
+      <h1>Lorem Ipsum</h1>
+      <p>오늘 저녁은 맛있는 녹차 치즈 케이스였습니다. 진짜 맛있었다용! </p></Card>
+    ReactDOM.render(element,root)
+
+    // props 컴포넌트에 있는 property를 그대로 가져와서 쓸 수 있게 함.
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <title>React</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    //  클래스명은 항상 대문자로 써준다.
+    //  React.Component의 의미 : react에서 만들어놓은 component를 상속해서 사용하겠다는 뜻. 
+    //  이걸 붙이지 않고 사용하게 될 경우, 제대로 된 결과 안나온다넹
+    class Test extends React.Component{
+      render(){
+        return <h1>Hello Component </h1>
+      }
+    }
+    const element = <Test />
+    ReactDOM.render(element,root)
+  </script>
+</body>
+</html>

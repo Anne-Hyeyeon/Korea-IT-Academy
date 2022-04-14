@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <title>React</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    function Custom (props){
+      return <h1>Hello World</h1>
+    }
+    const root = document.getElementById('root')
+    const element = <Custom></Custom>
+    ReactDOM.render(element,root)
+
+    // Custom이란 컴포넌트 만드는 법 : function으로 만들거나, Class로 만들면 된다.
+    // function은 주로 작은 단위에서 이용됨. 
+  </script>
+</body>
+</html>
