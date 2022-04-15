@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <script src="https://code.jquery.com/jquery-1.7.js"></script>
+  <script>
+    $(function(){
+       var numbers = [1,2,3,4,5];
+       numbers.forEach(function(num){
+         var $li = $('<li />');
+         $li.text(num);
+         $('#list').append($li);
+       });
+    }); 
+  </script>            
+</head>
+<body>
+  <ul id="list"></ul>
+</body>
+</html>

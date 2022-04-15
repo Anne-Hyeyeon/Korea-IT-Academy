@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <title>React</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    const list = [{
+         id: 1, name:'김혜연', age:31
+       },{
+         id: 2, name:'김혜진', age:28
+       },{
+         id: 3, name:'김현숙', age:55
+       }];
+    class List extends React.Component{
+      constructor (props){
+        super (props)
+      }
+      render() {
+        const itemList = this.props.list.map((item,index)=>(
+          <li key={item.id}>
+            {/*주석처리가 가능*/}
+            <p>이름 : {item.name}</p>
+            <p>나이 : {item.age}</p>
+          </li>
+        ))
+        return (
+          <ul>
+           {itemList}
+          </ul>
+        )
+      }
+    }
+    ReactDOM.render(<List list ={list} />,document.getElementById('root'))
+  </script>
+</body>
+</html>

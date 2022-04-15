@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <script src="https://code.jquery.com/jquery-1.7.js"></script>
+  <script>
+    $(function(){
+      $(".a").keyup(function(event){
+        $("div").text(event.target.value);
+        });
+      }); 
+  </script>            
+</head>
+<body>
+  <input type="text" class="a" />
+  <div></div>
+</body>
+</html>

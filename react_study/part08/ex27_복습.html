@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <title>React</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    const root = document.getElementById('root')
+    class App extends React.Component {
+      constructor (props){
+        super (props)
+      }
+      render(){
+        return <MyButton buttonName="안녕" clickFunc={this.props.myFunc} />
+      }
+    }
+    var 안녕 = function() {
+        alert('hi!')
+    }
+
+    class MyButton extends React.Component {
+      constructor (props){
+        super (props)
+      }
+      render() {
+        return <button onClick={this.props.clickFunc}>{this.props.buttonName}</button>
+        // 여기서 버튼은 html의 button하고는 다르다. 자바스크립트 집단에서 쓰는 버튼의 명칭
+      }
+    }
+
+    ReactDOM.render(<App myFunc={안녕} />,root)
+  </script>
+</body>
+</html>

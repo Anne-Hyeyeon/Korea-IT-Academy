@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <title>React</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    const root = document.getElementById('root')
+    class App extends React.Component {
+      constructor (props){
+        super (props)
+      }
+      render(){
+        return <MyButton buttonName="안녕" step={15} />
+      }
+    }
+
+    class MyButton extends React.Component {
+      constructor (props){
+        super (props)
+        this.state = {} //React가 state라는 변수에 있는 데이터를 관찰한다. 여기서 관찰이란? state 안의 값이 바뀌면, 해당 값을 바꿔주는 역할을 함.
+        this.state.count = 0
+      }
+      함수() {
+        /* this.setState({
+          count : this.state.count + 1
+        }) */
+
+        this.setState((prevState,props)=>{
+          return {
+            count: prevState.count + props.step
+          }
+        })
+      }
+      render() {
+        return <button onClick={this.함수.bind(this)}>클릭카운터{this.state.count}</button>
+      }
+    }
+
+    ReactDOM.render(<App />,root)
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <script src="https://code.jquery.com/jquery-1.7.js"></script>
+  <script>
+    $(function(){
+       var human = [{
+         name:'김혜연',
+         age:31
+       },{
+         name:'김혜진',
+         age:28
+       },{
+         name:'김현숙',
+         age:55
+       }];
+       human.forEach(function(man){
+         var $li = $('<li />');
+         var $nameP = $('<p />');
+         $nameP.text('이름: '+man.name);
+         var $ageP = $('<p>나이: '+man.age+'</p>')
+         $li.append($nameP,$ageP);
+         $('#list').append($li);
+       });
+    }); 
+  </script>            
+</head>
+<body>
+  <ul id="list"></ul>
+</body>
+</html>
