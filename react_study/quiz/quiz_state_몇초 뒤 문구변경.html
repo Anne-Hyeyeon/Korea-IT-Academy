@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <title>React</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    class TestA extends React.Component {
+      constructor(props){
+        super(props)
+        this.state={
+          text:'안녕하세요'
+        }
+        setTimeout(() => {
+          this.setState({text:'안녕히가세요.'})
+        }, 3000);
+      }
+      render() {
+        return <h1>{this.state.text}</h1>
+      }
+      //  React에서는 상태, 프로퍼티, 이벤트가 중요한 3가지이다. 
+    }
+    const element = <TestA />
+    ReactDOM.render(element,document.getElementById('root'))
+  </script>
+</body>
+</html>

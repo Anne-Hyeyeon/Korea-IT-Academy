@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <title>React</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    class CBox extends React.Component {
+      constructor(props) {
+        super(props)
+        this.state = {
+          checked : false
+        }
+      }
+      render() {
+        // 체크가 되지 않았을 때 
+        let mark = '□'
+        let bstyle = {fontWeight:'normal'}
+        if(this.state.checked){
+          mark = '■'
+          bstyle={
+            fontWeight:'bold'
+          }
+        }
+        const clickHandler = (e) => {
+          const newValue = !this.state.checked
+          // 느낌표 ! this 의 반댓값을 나타낼 때 씀.
+          this.setState({
+            checked : newValue
+          })
+        }
+        return (
+          <div onClick={clickHandler} style={bstyle}>
+            {mark} {this.props.label}
+          </div>
+        )
+      }
+    }
+    const element = <div>
+      <CBox label="Apple" />
+      <CBox label="Banana" />
+      <CBox label="Orange" />
+      <CBox label="Mango" />
+      </div>
+    ReactDOM.render(element,document.getElementById('root'))
+  </script>
+</body>
+</html>

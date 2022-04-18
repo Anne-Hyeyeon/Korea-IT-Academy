@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <title>React</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+
+    class TestA extends React.Component {
+      constructor(props){
+        super(props)
+        this.state={
+          date: new Date()
+        }
+        setInterval(()=> {
+          this.setState({date:new Date()})
+        }, 1000);
+      }
+      fmt (v){
+        const s = '00' + v
+        return s.substr(s.length - 2, 2)
+      }
+      render() {
+        const date = this.state.date
+        const hour = this.fmt(date.getHours())
+        const min = this.fmt(date.getMinutes())
+        const sec = this.fmt(date.getSeconds())
+
+        return(
+        <h1>{hour}:{min}:{sec}</h1>
+        )
+      }
+    }
+    const element = <TestA />
+    ReactDOM.render(element,document.getElementById('root'))
+  </script>
+</body>
+</html>
