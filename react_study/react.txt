@@ -29,3 +29,7 @@ function () 요러케. function() 하지 말고!
 - new Array 사용 x, 꺾쇠 사용하기
 - const로 변수를 넣었을 때, 값을 재선언 하지 말것. (const는 상수이기 때문에. 변하지 않는다.)
 - window는 기본 변수이기 때문에, 할당하지 말 것.
+
+2022-04-19 node.js
+- SPA : Single-Page-Application
+- MPA : Multi-Page-Application

@@ -27,23 +27,28 @@ class Stopwatch extends Component {
   }
 
 
+
   getDisp(){
     const z2 = (v)=>{
       const l = '00' + v
       return l.substr(l.length - 2,2)
     }
 
-     const s = this.state
+    const z4 = (v)=>{
+      const i = '0' + v
+      return i.substr(i.length - 4,2)
+    }
+
+    const s = this.state
     const delta = s.curTime - s.startTime
     const t = Math.floor(delta/1000)
     const ss = t % 60
-    const ms = Math.floor(delta/10) % 60
     const m = Math.floor(t / 60)
     const mm = m % 60
     const hh = Math.floor(mm/60)
     
 
-    return <span className='disp'>{z2(hh)}:{z2(mm)}:{z2(ss)}:{z2(ms)}</span>
+    return <span className='disp'>{z2(hh)}:{z2(mm)}:{z2(ss)}:{z4(delta)}</span>
   }
   render() {
     let label = 'START'
