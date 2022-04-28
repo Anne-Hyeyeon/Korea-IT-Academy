@@ -40,7 +40,7 @@ export default class Gugudan extends Component {
       <>
         <div>{this.state.first} 곱하기 {this.state.second}은(는) ?</div>
         <form onSubmit={this.onSubmit}>
-          <input type="text" value={this.state.value} onChange={this.onChange} />
+          <input type="" value={this.state.value} onChange={this.onChange} />
           <button>입력</button>
         </form>
         <div>{this.state.result} {this.state.answer}</div>
