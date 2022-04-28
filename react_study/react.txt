@@ -33,3 +33,17 @@ function () 요러케. function() 하지 말고!
 2022-04-19 node.js
 - SPA : Single-Page-Application
 - MPA : Multi-Page-Application
+
+- js 파일 생성시 기본 : import React from 'react'
+- export, import 기본
+
+-Life Cycle API (생명주기)
+DOM이
+1. 나타날 때(Mounting)
+내가 만든 코드가 브라우저에 들어갈 때
+2. 업데이트 될 때 (Updating)
+props나 state가 수정될 때
+3. 사라질 때 (Unmoungting)
+만들었던 게 사라질 때
+
+render : 화면에 표시 
