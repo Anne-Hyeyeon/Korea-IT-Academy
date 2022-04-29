@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 # Created by https://www.toptal.com/developers/gitignore/api/react
 # Edit at https://www.toptal.com/developers/gitignore?templates=react
@@ -20,28 +19,3 @@ thumb
 sketch
 
 # End of https://www.toptal.com/developers/gitignore/api/react
-=======
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# production
-/build
-
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
->>>>>>> 8250fcb667484d21f277bedad828933c4bd3acee
