@@ -1,13 +1,13 @@
 import './App.css';
 import Quiz from './component/Quiz';
 // import Box from './component/Box';
-// import Mount from './component/Mount'
 // import Userlist from './component/Userlist';
+// import Mount from './component/Mount'
 // import Blog from './component/Blog.js';
 // import Say from './component/Say.js';
 // import Say2 from './component/Say2.js';
-// import SimpleForm from './component/SimpleForm';
 // import Gugudan from './component/Gugudan';
+// import SimpleForm from './component/SimpleForm';
 // import JavascriptGrammar from './component/JavascriptGrammar';
 
 function App() {
