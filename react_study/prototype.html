@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype이란?</title>
+    <script>
+        function robot(){
+            this.q = 'run';
+            this.w = 'walk';
+        }
+        robot.prototype.name = 'kim';
+        var haha = new robot();
+        console.log(haha.name);
+
+        /* prototype이란 ? object에서 자료를 요청할 때 일어나는 일
+        1. 직접 자료를 가지고 있으면 바로 출력
+        2. 없으면 부모 유전자까지 찾는다.
+        3. 없으면 부모의 부모 유전자까지 찾는다. 
+        4. 그래 없으면 조상 유전자까지 계속 찾는다.
+        이것을 prototype chain이라고 한다. */
+        
+        // prototype chain
+        function Ultra(){}
+        Ultra.prototype.ultraProp = true;
+        function Super(){}
+        Super.prototype = new Ultra();
+        function sub(){}
+        sub.prototype = new Super();
+        var o = new sub();
+        console.log(o.ultraProp);
+
+    </script>
+<body>
+</head>
+    
+</body>
+</html>
